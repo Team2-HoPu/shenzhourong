@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#about_content{
+    width: 1900px;
+    height: 1510px;
+    background-color: #EEEEEE;
+    margin-top: 420px;
+}
+/*.all{*/
+    /*float: left;*/
+    /*width: 1205px;*/
+    /*border: 1px solid sandybrown;*/
+/*}*/
+/*关于我们*/
+#about_introduction{
+     float: left;
+     width: 1205px;
+     height: 345px;
+     margin-top:40px;
+     margin-left: 350px;
+}
+.txt{
+    font-size: 13px;
+    line-height:25px;
+    margin-top: 40px;
+}
+.txt_2{
+    font-size: 13px;
+    line-height:25px;
+}
+.txt_3{
+    font-size: 13px;
+    line-height:25px;
+}
+/*企业历程*/
+#about_course{
+    float: left;
+    width: 1205px;
+    height: 345px;
+    margin-left: 350px;
+}
+#process{
+    margin-top: 40px;
+    list-style: none;
+}
+#process li{
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+}
+/*企业活动与交流*/
+#about_exchange{
+    width: 1205px;
+    height: 570px;
+    float: left;
+    margin-left: 350px;
+    margin-top: 70px;
+}
+.title{
+    font-size: 15px;
+    font-weight: bold;
+}
