@@ -51,15 +51,16 @@
      text-align: center;
      width: 145px;
      height: 32px;
-     line-height: 35px;
+     line-height: 33px;
 }
  #production_nav .production_sub a {
     text-decoration: none;
     color: #000000;
      font-size: 16px;
 }
-#production_nav .production_sub a:hover .production_sub li{
+#production_nav .production_sub a:hover{
     background-color: #3D9EBc;
+    display: block;
 }
 
 
