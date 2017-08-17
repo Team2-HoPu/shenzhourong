@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style: none;
+}
 /*中部整体*/
 #index_center_down{
     margin-top: 1355px;
     width: 1900px;
-    height: 1425px;
+    height: 1825px;
     background-color:#EEEEEE;
 }
 .customer{
@@ -43,7 +46,7 @@
 /*人物介绍*/
 #index_characters_intro{
     float: left;
-    width: 100%;
+    width:1900px;
     height: 430px;
     margin-top: 100px;
     background-image: url("../img/first_images/bg22.jpg");
@@ -56,9 +59,7 @@
     margin:auto;
 }
 dl{
-
     float: left;
-
     margin-left: 80px;
     margin-top:80px;
 
@@ -93,14 +94,80 @@ dd:hover{
 }
 #index_left_ul{
     width: 340px;
-    height: 300px;
-    border: 1px solid saddlebrown;
+    height: 200px;
     float: left;
+    margin-top: 150px;
+    margin-left: 345px;
     font-size: 14px;
 }
 #index_left_ul li{
-    
+    line-height: 30px;
 }
 .index_left_ul_title{
     margin-bottom: 40px;
+}
+/*最新动态*/
+#index_list_ul{
+    float: left;
+    width: 1900px;
+    height: 360px;
+    background-color:#FFFFFF ;
+}
+#new_dynamic_state{
+    float: left;
+    font-size: 40px;
+    color: #289AB6;
+    margin-top: 115px;
+    margin-left: 100px;
+}
+#index_center_ul{
+    font-size: 14px;
+    float: left;
+    width: 340px;
+    height: 150px;
+    line-height: 30px;
+    margin-left: -205px;
+    margin-top: 219px;
+}
+#index_right_ul{
+    width: 340px;
+    height: 300px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 155px;
+}
+#index_right_ul img{
+    width: 380px;
+    height: 120px;
+}
+.img{
+    margin-top: 50px;
+}
+#index_friend_link{
+    float: left;
+    width: 1900px;
+    height: 400px;
+    /*background-color: red;*/
+    background-color: #EEEEEE;
+}
+#friend_link_list1{
+    width: 1200px;
+    height: 70px;
+    float: left;
+    margin-left: 315px;
+    margin-top: 100px;
+}
+#friend_link_list1 li{
+    float: left;
+    margin-left: 20px;
+}
+#friend_link_list2{
+    width: 1200px;
+    height: 70px;
+    float: left;
+    margin-left: 315px;
+}
+#friend_link_list2 li{
+    float: left;
+    margin-left: 20px;
 }
