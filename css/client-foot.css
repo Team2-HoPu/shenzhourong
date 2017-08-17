@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#foot{
+    height: 1010px;
+    width: 1910px;
+}
+/*图片*/
+#foot-img{
+    width: 1910px;
+    text-align: center;
+    height: 492px;
+    background-image: url("../img/first_images/bg33.jpg");
+    border: 1px solid black;
+    color: white;
+}
+#foot-img-p{
+    margin: 136px 0 26px 0;
+    font-size: 35px;
+}
+#foot-img-id{
+    font-size: 20px;
+    margin-bottom: 33px;
+}
+#foot-img-button{
+    width: 202px;
+    height: 57px;
+    background-color: #EDAB00;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 57px;
+    margin-left: 45%;
+}
+#foot-nav{
+    width: 1910px;
+    height: 109px;
+}
+#foot-nav-dl{
+    margin-left: 393px;
+}
+.foot-nav-dl{
+    float: left;
+    /*border-right: 1px solid #EEEEEE;*/
+    margin:50px 23px 0 0 ;
+
+}
+.foot-nav-dl dt{
+    float: left;
+
+}
+.foot-nav-dl dd{
+    float: left;
+    font-size: 26px;
+    margin-right: 23px;
+    line-height: 67px;
+    height: 67px;
+    border-right: 1px solid #EEEEEE;
+    padding-right: 23px;
+}
+/*底部*/
+#foot-company{
+    background-color:#EEEEEE;
+    height: 412px;
+}
+#foot-company-list{
+    height: 256px;
+    LINE-HEIGHT: 20pt;
+    color: #535353;
+    /*border-bottom: 1px solid black;*/
+}
+/*快速入口*/
+#foot-list-left{
+    margin-left: 354px;
+}
+/*整体 dl*/
+.foot-list-left{
+    float: left;
+    margin: 47px 0 0 128px;
+}
+#foot-company-list dl dt{
+    margin-bottom: 32px;
+    font-size: 22px;
+}
+#foot-company-list dl dd{
+    font-size: 16px;
+}
+#foot-list-code{
+    float: right;
+}

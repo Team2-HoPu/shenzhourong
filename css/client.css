@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*头部*/
+#client-top{
+    width: 1910px;
+    height: 359px;
+}
+/*中间*/
+#client-center{
+    height:1600px;
+    width: 1910px;
+}
+/*灰色背景图*/
+.client-grey{
+    width: 1910px;
+    height: 495px;
+    background-color: #EEEEEE;
+}
+/*白色背景*/
+#client-midden{
+    height: 495px;
+    background-color: white;
+}
+/*图片样式*/
+.client-img{
+    width: 492px;
+    height: 321px;
+    float: left;
+    margin-top: 73px;
+}
+#client-img{
+     margin-left: 351px ;
+     margin-right: 111px;
+ }
+/*文字样式*/
+.client-word{
+    width: 602px;
+    height: 301px;
+    float: left;
+    margin: 78px 111px 0 351px;
+    color: #535353;
+    LINE-HEIGHT: 20pt;
+}
+#client-word{
+   margin: 78px 0 0 0;
+}
+h2{
+    color: #2598Bc;
+    margin-bottom: 33px;
+}
+p{
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+h5{
+    margin-bottom: 20px;
+}
+#client-page{
+    height: 115px;
+    text-align: center;
+    line-height: 115px;
+}
+#client-page ul{
+    list-style-type: none;
+}
+#client-page ul li{
+    display:inline;
+}
