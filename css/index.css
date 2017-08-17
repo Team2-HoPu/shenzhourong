@@ -52,10 +52,55 @@
 .list{
     width: 1000px;
     height: 200px;
+    padding-right: 50px;
     margin:auto;
 }
 dl{
+
     float: left;
+
     margin-left: 80px;
-    margin-top:60px;
+    margin-top:80px;
+
+}
+dt{
+    width: 111px;
+    height: 111px;
+    border: 2px solid ;
+    border-radius: 50%;
+
+}
+dd{
+    color: white;
+    font: 15px bold;
+    text-align: center;
+    line-height: 20px;
+}
+.list_introduce{
+    text-align: center;
+    float: left;
+    margin-top: 45px;
+    margin-left: 350px;
+    color: #E58E43;
+    line-height: 25px;
+}
+/*人物hover效果*/
+dd:hover{
+    color:#E58E43 ;
+}
+.list_img:hover{
+    border: 2px solid #E58E43;
+}
+#index_left_ul{
+    width: 340px;
+    height: 300px;
+    border: 1px solid saddlebrown;
+    float: left;
+    font-size: 14px;
+}
+#index_left_ul li{
+    
+}
+.index_left_ul_title{
+    margin-bottom: 40px;
 }
