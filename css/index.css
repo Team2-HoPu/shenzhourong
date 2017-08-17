@@ -7,6 +7,7 @@ ul{
 }
 /*中部整体*/
 #index_center_down{
+    margin: auto;
     margin-top: 1355px;
     width: 1900px;
     height: 1825px;
@@ -22,10 +23,12 @@ ul{
     margin-top: 40px;
 }
 .txt{
+    text-align: center;
     font-size: 13px;
     float: left;
-    margin-top:109px;
-    margin-left: -335px;
+    margin: 40px 400px 0 700px;
+    /*margin-top:109px;*/
+    /*margin-left: -335px;*/
 }
 /*中部轮播*/
 #index_customer_carouse{
@@ -36,6 +39,53 @@ ul{
     top: 50px;
     border: 1px solid saddlebrown;
     overflow: hidden;
+    font-size: 0;
+}
+#left{
+    font: 50px bold;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid sienna;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 135px;
+}
+#right{
+    font: 50px bold;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid sienna;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 135px;
+
+}
+#change{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    left:530px;
+    top: 310px;
+}
+.on{
+    background-color: darkorange;
+}
+span{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    line-height: 21px;
+    text-align: center;
+    margin-left: 10px;
 }
 /*轮播图片容器*/
 #index_carouse_img{
@@ -45,7 +95,7 @@ ul{
 }
 /*人物介绍*/
 #index_characters_intro{
-    float: left;
+    /*float: left;*/
     width:1900px;
     height: 430px;
     margin-top: 100px;
@@ -78,10 +128,11 @@ dd{
     line-height: 20px;
 }
 .list_introduce{
+    width: 1900px;
     text-align: center;
-    float: left;
-    margin-top: 45px;
-    margin-left: 350px;
+    /*border: 1px solid red;*/
+    /*float: left;*/
+    margin-top: 60px;
     color: #E58E43;
     line-height: 25px;
 }
@@ -143,6 +194,15 @@ dd:hover{
 .img{
     margin-top: 50px;
 }
+/*友情链接*/
+#join_hands{
+    display: block;
+    width: 200px;
+    height: 50px;
+    font: 30px bold;
+    color: deepskyblue;
+    margin:40px auto 0 auto;
+}
 #index_friend_link{
     float: left;
     width: 1900px;
@@ -155,7 +215,7 @@ dd:hover{
     height: 70px;
     float: left;
     margin-left: 315px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #friend_link_list1 li{
     float: left;

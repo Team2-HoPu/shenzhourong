@@ -10,13 +10,18 @@
         <p class="customer">客户案例</p>
         <p class="txt">适用场景：消费金融、助贷服务机构、银行、小额贷款公司、P2P等开展小额信贷业务机构</p>
     <div id="index_customer_carouse">
-
-        <div id="index_carouse_img">
+        <div id="left"> <</div>
+        <div id="right">> </div>
+        <div id="index_carouse_img" style="left: 0">
             <img src="../img/first_images/020.jpg">
             <img src="../img/first_images/019.jpg">
             <img src="../img/first_images/018.jpg">
         </div>
-
+        <div id="change">
+        <span class="on"></span>
+        <span ></span>
+        <span ></span>
+        </div>
     </div>
         <div id="index_characters_intro">
             <div class="list">
@@ -83,6 +88,7 @@
         </ul>
         </div>
         <div id="index_friend_link">
+            <span id="join_hands">合作链接</span>
             <ul id="friend_link_list1">
                 <li><img src="../img/first_images/01.jpg" ></li>
                 <li><img src="../img/first_images/02.jpg" ></li>
@@ -108,4 +114,100 @@
         </div>
     </div>
 </body>
+<script>
+
+
+
+        function getId(id) {
+            return document.getElementById(id) ? document.getElementById(id) : null;
+        }
+
+        function getStyle(obj, attr) {
+            if (document.all) {
+                return parseInt(obj.currentStyle[attr]);
+            } else {
+                return parseInt(getComputedStyle(obj, false)[attr]);
+            }
+        }
+
+//        var btn_idx;
+//        var content = getId("index_center_down");
+        var prev = getId("left");
+        var next = getId("right");
+        var list = getId("index_carouse_img");
+        console.log(prev,next,list);
+//    var buttons=document.getElementsByTagName("span");
+        function moving(speed, terminal, isLeft) {
+//            if(isLeft){
+//                isLeft=0;
+//            }else{
+//                isLeft=-800;
+//            }
+            isLeft = isLeft ? 0 : -2400;
+            var left_val = parseInt(list.style.left);
+            console.log(left_val);
+            console.log(left_val);
+            if (left_val === terminal) {
+                left_val = isLeft;
+            } else {
+                left_val += speed;
+            }
+            list.style.left = left_val + "px";
+            console.log(left_val + "px");
+
+        }
+
+//        btn_idx=Math.ceil(Math.abs(left_val/(401)));
+//        console.log(btn_idx);
+//        for(var i=0;i<buttons.length;i++){
+//            buttons[i].setAttribute("class","");
+//        }
+//        buttons[btn_idx].setAttribute("class","on");
+//    }
+
+            next.addEventListener("click", function () {
+                moving(-1200, -2400, true);
+            }, true);
+            prev.addEventListener("click", function () {
+                moving(1200, 0, false);
+            }, true);
+
+
+//        next.addEventListener("click", function () {
+//            moving(-400, -800, true);
+//        }, true);
+//        prev.addEventListener("click", function () {
+//            moving(400, 0, false);
+//        }, true);
+//    }
+
+//    for(var i=0;i<buttons.length;i++){                    //闭包，贼重要，获得i的值。
+//        (function(n){
+//            buttons[i].onclick=function(){
+//                list.style.left=n*(-400)+"px";
+//                for(var i=0;i<buttons.length;i++){
+//                    buttons[i].setAttribute("class","");
+//                }
+//                this.setAttribute("class","on");
+//            }
+//        })(i);
+//    }
+//    var timer=null;
+//    var timer1=null;
+//    timer=setInterval(function(){
+//        moving(-400,-800,true);
+//    },1000);
+//    var cont=getId("content");
+//    cont.onmouseover=function(){
+//        clearInterval(timer1);
+//        clearInterval(timer);
+//    };
+//    cont.onmouseout=function(){
+//        clearInterval(timer1);
+//        timer1=setInterval(function(){
+//            moving(-400,-800,true);
+//        },1000);
+//    };
+
+</script>
 </html>
