@@ -22,9 +22,6 @@
 #production_nav {
     float: left;
     margin-left: 895px;
-    /*width: 626px;*/
-
-
 }
 #production_ul {
     list-style-type: none;
@@ -33,6 +30,8 @@
 #production_ul li {
     float: left;
     margin-right: 59px;
+    line-height: 14px;
+    height: 40px;
 }
 #production_nav a {
     text-decoration: none;
@@ -41,7 +40,6 @@
  #production_nav .production_sub {
      margin-top: 25px;
     width: 145px;
-    overflow: auto;
     background-color: #b6DAE6;
     text-align: center;
     list-style-type: none;
@@ -51,12 +49,12 @@
      text-align: center;
      width: 145px;
      height: 32px;
-     line-height: 33px;
+     line-height: 32px;
 }
  #production_nav .production_sub a {
     text-decoration: none;
     color: #000000;
-     font-size: 16px;
+     font-size: 15px;
 }
 #production_nav .production_sub a:hover{
     background-color: #3D9EBc;
@@ -71,6 +69,12 @@
      position: absolute;
      left: -35px;
  }
+#production_ul .production_sub {
+    display: none;
+}
+#production_ul .production_li:hover .production_sub {
+    display: block;
+}
 
 
 
