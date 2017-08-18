@@ -114,6 +114,8 @@ span{
     margin:auto;
 }
 dl{
+    width: 100px;
+    height: 300px;
     float: left;
     margin-left: 80px;
     margin-top:80px;
@@ -127,19 +129,68 @@ dt{
 
 }
 dd{
+    margin-left: 7px;
+    width: 100px;
+    height: 40px;
     color: white;
     font: 15px bold;
     text-align: center;
     line-height: 20px;
 }
 .list_introduce{
-    width: 1900px;
+    width: 1200px;
+    height: 40px;
     text-align: center;
-
-    margin-top: 60px;
+    top: 30px;
+    left: -170px;
     color: #E58E43;
     line-height: 25px;
+    position: relative;
 }
+
+#introduce2{
+    left: -350px;
+}
+#introduce3{
+    left: -530px;
+}
+#introduce4{
+    left: -700px;
+}
+#introduce5{
+    left: -900px;
+}
+.list_introduce{
+    display: none;
+    width: 1200px;
+    height: 40px;
+}
+dl:hover dt
+{
+    border-color:red ;
+}
+dl:hover #introduce1{
+    display: block;
+}
+dl:hover #introduce2{
+    display: block;
+}
+dl:hover #introduce3{
+    display: block;
+}
+dl:hover #introduce4{
+    display: block;
+}
+dl:hover #introduce5{
+    display: block;
+}
+
+
+
+
+
+
+
 
 
 #index_left_ul{
