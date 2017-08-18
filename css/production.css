@@ -150,11 +150,7 @@
     margin-left: 245px;
 }
 
-#production_third {
-    width: 1905px;
-    height: 498px;
-    background-color: #2597ba;
-}
+
 .production_five {
     width: 1905px;
     height: 646px;
@@ -183,4 +179,70 @@
 #production_second_check4{
     margin-left: 200px;
 }
+
+/*轮播*/
+#production_third {
+    width: 1905px;
+    height: 498px;
+    background-color: #2597ba;
+}
+#production_third_content {
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    width: 1200px;
+    height: 498px;
+    background-color: #2597ba;
+}
+#production_third_carousel {
+    width: 6000px;
+    height: 498px;
+    margin: auto;
+    /*position: absolute;*/
+    /*z-index: 1;*/
+}
+.production_third_carousel_one {
+    width: 6000px;
+    height: 498px;
+    float: left;
+    margin-left: 350px;
+
+}
+.production_third_carousel_one_left {
+    width: 553px;
+    height: 498px;
+    float: left;
+}
+.production_third_carousel_one_left_title {
+    margin-top: 70px;
+}
+.production_third_carousel_one_left_title a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.production_third_carousel_one_left_word {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 87px;
+}
+#production_third_carousel_one_left_word_two {
+    margin-top: 35px;
+}
+#production_third_carousel_two_left_word_three {
+    margin-top: 30px;
+}
+
+.production_third_carousel_one_right {
+    width: 550px;
+    height: 498px;
+    float: left;
+    margin-left: 70px;
+}
+.production_third_carousel_one_right img {
+    width: 515px;
+    height: 287px;
+    margin-top: 115px;
+}
+/*轮播结束*/
 
