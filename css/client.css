@@ -33,11 +33,30 @@
     height: 321px;
     float: left;
     margin-top: 73px;
+    overflow: hidden;
 }
 #client-img{
      margin-left: 351px ;
      margin-right: 111px;
  }
+#client-img-magnify{
+    background-size: 100%;
+    background: url("../img/client_images/01%20_2.jpg");
+    background-position: center;
+    transition:all 0.5s ease-in-out;
+}
+#client-img-hover{
+    background-size: 100%;
+    background: url("../img/client_images/01%20_3.jpg");
+    background-position: center;
+    transition:all 0.5s ease-in-out;
+}
+#client-img-hover:hover{
+    background-size: 110%;
+}
+#client-img-magnify:hover {
+    background-size: 110%;
+}
 /*文字样式*/
 .client-word{
     width: 602px;
@@ -51,7 +70,6 @@
    margin: 78px 0 0 0;
 }
 h2{
-    color: #2598Bc;
     margin-bottom: 33px;
 }
 p{
@@ -61,6 +79,15 @@ p{
 h5{
     margin-bottom: 20px;
 }
+#client-center  h2 a{
+    color: #2598Bc;
+    text-decoration: none;
+}
+#client-center  h5 a{
+    color: #535353;
+    text-decoration: none;
+}
+/*换页*/
 #client-page{
     height: 115px;
     text-align: center;
@@ -71,6 +98,14 @@ h5{
 }
 #client-page ul li{
     display:inline;
+}
+#client-page ul li a{
+    text-decoration: none;
+    color: #535353;
+
+}
+#client-page ul li a:hover{
+    background-color: #2598Bc;
 }
 /*客户案例结束*/
 /*---------**************/
