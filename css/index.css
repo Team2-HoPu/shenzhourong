@@ -5,6 +5,10 @@
 ul{
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 /*中部整体*/
 #index_center_down{
     margin: auto;
@@ -92,6 +96,7 @@ span{
     width:4000px;
     height: 345px;
     position: absolute;
+    transition:all .8s ease-in-out;
 }
 /*人物介绍*/
 #index_characters_intro{
@@ -130,33 +135,82 @@ dd{
 .list_introduce{
     width: 1900px;
     text-align: center;
-    /*border: 1px solid red;*/
-    /*float: left;*/
+
     margin-top: 60px;
     color: #E58E43;
     line-height: 25px;
 }
-/*人物hover效果*/
-dd:hover{
-    color:#E58E43 ;
-}
-.list_img:hover{
-    border: 2px solid #E58E43;
-}
+
+
 #index_left_ul{
-    width: 340px;
-    height: 200px;
     float: left;
-    margin-top: 150px;
+    width:800px;
+    height: 200px;
+    margin-top: 100px;
     margin-left: 345px;
     font-size: 14px;
 }
 #index_left_ul li{
+    width: 100px;
+    height:30px;
+    float: left;
     line-height: 30px;
 }
+
 .index_left_ul_title{
     margin-bottom: 40px;
 }
+.index_left_title{
+    margin-top: 25px;
+
+    display: none;
+    width:1000px;
+    height: 150px;
+}
+.block{
+    display: block;
+}
+.ma_left{
+    margin-left: 40px;
+}
+#index_left_ul_title1_hover li{
+    float: left;
+    width: 340px;
+    height: 30px;
+}
+#index_left_ul_title2_hover li{
+    float: left;
+    width: 340px;
+    height: 30px;
+}
+#index_left_ul_title3_hover li{
+    float: left;
+    width: 340px;
+    height: 30px;
+}
+.index_left_ul_title1:hover #index_left_ul_title1_hover{
+    display: block;
+}
+.index_left_ul_title2:hover #index_left_ul_title2_hover{
+    display: block;
+    margin-left: -100px;
+
+}
+.index_left_ul_title3:hover #index_left_ul_title3_hover{
+    display: block;
+    margin-left: -200px;
+
+}
+.index_left_ul_title1:hover {
+   color: #E58E43;
+}
+
+
+
+
+
+
+
 /*最新动态*/
 #index_list_ul{
     float: left;
@@ -165,38 +219,33 @@ dd:hover{
     background-color:#FFFFFF ;
 }
 #new_dynamic_state{
+    width: 200px;
+    height: 50px;
     float: left;
+    margin-left: -280px;
+    margin-top: 70px;
     font-size: 40px;
     color: #289AB6;
-    margin-top: 115px;
-    margin-left: 100px;
 }
-#index_center_ul{
-    font-size: 14px;
-    float: left;
-    width: 340px;
-    height: 150px;
-    line-height: 30px;
-    margin-left: -205px;
-    margin-top: 219px;
-}
+
 #index_right_ul{
+    float: left;
     width: 340px;
     height: 300px;
-    float: left;
-    margin-left: 50px;
-    margin-top: 155px;
+    margin-top: -190px;
+    margin-left: 1100px;
 }
 #index_right_ul img{
     width: 380px;
     height: 120px;
 }
 .img{
-    margin-top: 50px;
+    margin-top: 35px;
 }
 /*友情链接*/
 #join_hands{
     display: block;
+    border: none;
     width: 200px;
     height: 50px;
     font: 30px bold;
