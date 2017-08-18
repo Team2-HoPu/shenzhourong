@@ -1,14 +1,16 @@
+/*-******----------***********-----------*/
+/*底部开始*/
 *{
     margin: 0;
     padding: 0;
 }
 #foot{
     height: 1010px;
-    width: 1910px;
+    width: 1900px;
 }
 /*图片*/
 #foot-img{
-    width: 1910px;
+    width: 1900px;
     text-align: center;
     height: 492px;
     background-image: url("../img/first_images/bg33.jpg");
@@ -34,7 +36,7 @@
     margin-left: 45%;
 }
 #foot-nav{
-    width: 1910px;
+    width: 1900px;
     height: 109px;
 }
 #foot-nav-dl{
@@ -43,12 +45,11 @@
 .foot-nav-dl{
     float: left;
     /*border-right: 1px solid #EEEEEE;*/
-    margin:50px 23px 0 0 ;
+    margin:40px 23px 0 0 ;
 
 }
-.foot-nav-dl dt{
+.foot-nav-dt{
     float: left;
-
 }
 .foot-nav-dl dd{
     float: left;
@@ -65,27 +66,43 @@
     height: 412px;
 }
 #foot-company-list{
+    width: 1200px;
     height: 256px;
-    LINE-HEIGHT: 20pt;
+    LINE-HEIGHT: 21pt;
     color: #535353;
-    /*border-bottom: 1px solid black;*/
-}
-/*快速入口*/
-#foot-list-left{
-    margin-left: 354px;
-}
-/*整体 dl*/
-.foot-list-left{
     float: left;
-    margin: 47px 0 0 128px;
+    margin: 0 354px 37px;
+    border-bottom:1px solid black;
 }
-#foot-company-list dl dt{
-    margin-bottom: 32px;
-    font-size: 22px;
+.foot-list-left{
+    padding-top: 47px;
+    margin-right: 80px;
+    list-style-type: none;
+    float: left;
 }
-#foot-company-list dl dd{
-    font-size: 16px;
+.foot-list-word{
+  font-size: 22px;
+   margin-bottom: 32px;
 }
 #foot-list-code{
+    padding: 0 ;
     float: right;
+    margin: 0 0 52px 0;
 }
+#foot-list-code dt{
+    margin-top: 41px;
+}
+#foot-list-code dd{
+    margin-top: 20px;
+}
+/*公司版权*/
+#foot-copyright{
+    width: 1200px;
+    height: 155px;
+    margin-left: 354px;
+    text-align: center;
+    color: #535353;
+    LINE-HEIGHT: 23pt;
+}
+/*底部结束*/
+/*---------------***************************----*/
