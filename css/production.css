@@ -2,9 +2,20 @@
     padding:0;
     margin: 0;
 }
+body {
+    position: relative;
+    z-index: 99;
+}
 #production_container {
     width: 1905px;
     margin: auto;
+}
+#production_head {
+    width: 1905px;
+    height: 358px;
+    margin: auto;
+    background-image: url("../img/protect_images/top.jpg");
+    cursor: pointer;
 }
 #production_aboutAll {
 
@@ -204,7 +215,7 @@
     width: 1200px;
     height: 498px;
     float: left;
-    background-color: red;
+
 }
 .production_third_carousel_one_left {
     width: 553px;
@@ -245,14 +256,14 @@
     margin-top: 115px;
 }
 #next {
-    font-size: 50px;
+
     position: absolute;
     top: 230px;
     left:1060px;
     z-index: 99;
 }
 #prev {
-    font-size: 50px;
+
     position: absolute;
     top: 230px;
     z-index: 99;
