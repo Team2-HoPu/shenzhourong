@@ -15,6 +15,7 @@
     text-align: center;
     height: 492px;
     background-image: url("../img/first_images/bg33.jpg");
+    background-size: 100%;
     border: 1px solid black;
     color: white;
 }

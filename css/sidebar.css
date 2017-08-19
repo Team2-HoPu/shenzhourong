@@ -1,0 +1,125 @@
+
+/*---------------**********************------------*/
+/*右边栏*/
+#sidebar-center{
+    width: 100px;
+    height: 480px;
+    position: fixed;
+    right:200px;
+    top: 400px;
+}
+#sidebar-center-ul{
+    width: 100px;
+    height: 440px;
+    list-style-type: none;
+    text-align: center;
+}
+#sidebar-center-ul li{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #2598Bc;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: 50%;
+}
+
+/*电话*/
+#sidebar-center-phone{
+    background:url("../img/about_images/icon16.png") no-repeat;
+}
+#sidebar-phone-num{
+    width: 400px;
+    height: 100px;
+    border: 1px solid  #2598Bc;
+    position: relative;
+    right: 302px;
+    top:-1px;
+    background-color:white;
+    display: none;
+}
+#sideblar-phone-span{
+    display: block;
+    width: 300px;
+    float: left;
+    height: 100px;
+    font-size: 30px;
+    line-height: 100px;
+    color: #2598Bc;
+}
+#sidebar-center-cover{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background:url("../img/about_images/icon20dzf.png") no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+/*微信*/
+#sidebar-center-wx{
+    background:url("../img/about_images/icon17.png") no-repeat;
+
+}
+#sidebar-wx-hov{
+    position: absolute;
+    top: 20px;
+    left: -171px;;
+    width: 310px;
+    height: 210px;
+    display: none;
+
+}
+#sidebar-wx-code{
+    width: 100px;
+    height: 100px;
+    background:url("../img/about_images/icon21dzf.png") no-repeat;
+    position: relative;
+    right: -213px;
+    top: 112px;
+    /*border: 1px solid  #2598Bc;*/
+    background-position: center;
+    background-size: 50%;
+}
+#sidebar-wx-cover{
+    width: 200px;
+    height: 210px;
+    background:url("../img/about_images/erweima.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border: 1px solid  #2598Bc;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+}
+/*qq*/
+#sidabar-center-qq{
+    background:url("../img/about_images/icon18.png") no-repeat;
+}
+#sidabar-qq-cover{
+    width: 100px;
+    height: 100px;
+    background:url("../img/about_images/icon18dzf.png") no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: relative;
+    display: none;
+    left: 0;
+}
+#sidebar-center-phone:hover #sidebar-phone-num{
+    display: block;
+}
+#sidebar-center-wx:hover #sidebar-wx-hov{
+    display: block;
+}
+#sidabar-center-qq:hover #sidabar-qq-cover{
+    display: block;
+}
+/*返回*/
+#sidabar-center-return{
+    font-size: 80px;
+    color: #2598Bc;
+    border: 1px solid white;
+    display: none;
+}
+
+/*右边栏结束*/
+/*------************************----------------*/
