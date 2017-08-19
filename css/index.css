@@ -38,7 +38,7 @@ a{
 /*中部轮播*/
 #index_customer_carouse{
     width: 1200px;
-    height: 345px;
+    height: 462px;
     position: relative;
     left: 350px;
     top: 50px;
@@ -55,7 +55,7 @@ a{
     position: absolute;
     z-index: 2;
     left: 10px;
-    top: 150px;
+    top: 200px;
     background-color: black;
     opacity: 0.5;
     color: white;
@@ -69,7 +69,7 @@ a{
     position: absolute;
     z-index: 2;
     right: 10px;
-    top: 150px;
+    top: 200px;
     background-color: black;
     opacity: 0.5;
     color: white;
@@ -80,7 +80,7 @@ a{
     position: absolute;
     z-index: 2;
     left:530px;
-    top: 310px;
+    top: 415px;
 }
 .on{
     background-color: darkorange;
@@ -307,4 +307,44 @@ dl:hover dd {
 }
 .img img:hover{
     transform: scale(1.2);
+}
+
+.carouse_img{
+    width: 1200px;
+    height: 462px;
+    float: left;
+}
+#carouse_img_one{
+    background-image: url("../img/first_images/020.jpg");
+}
+#carouse_img_two{
+    background-image: url("../img/first_images/019.jpg");
+}
+#carouse_img_three{
+    background-image: url("../img/first_images/018.jpg");
+}
+.case{
+    position: absolute;
+    left:2500px;
+    top:100px;
+    width: 300px;
+    height: 40px;
+    font-size:28px;
+    color: white;
+}
+.case_txt{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left:2500px;
+    top:170px;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+}
+.case_b{
+    left: 1300px;
+}
+.case_a{
+    left: 100px;
 }

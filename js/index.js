@@ -87,15 +87,15 @@ window.onload=function() {
 //    获得list_introduce文字标签
     var list_introduce = document.getElementsByClassName("list_introduce");
     console.log(getComputedStyle(list_dl[0]).border);
-    list_dl[1].addEventListener("mouseover",function () {
-        check()
-    });
-    // check();
+    // list_dl[1].addEventListener("mouseover",function () {
+    //     check()
+    // });
+    check();
     function check() {
         for (var i = 0; i < list_dl.length; i++) {
             (function (n) {
 //            var list_dl_val=getComputedStyle(list_dl[n]).border;
-                list_dt[n].onmousemove = function () {
+                list_dl[n].onmousemove = function () {
                     for (var i = 0; i < list_dt.length; i++) {
                         list_dt[i].style.border = "2px solid slategrey";
                         list_introduce[i].style.display = "none";
