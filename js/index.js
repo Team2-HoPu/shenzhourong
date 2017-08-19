@@ -81,34 +81,38 @@ window.onload=function() {
     };
 
     //    获得dl标签
-    
-    var list_dl=document.getElementsByTagName("dl");
-    var list_dt=document.getElementsByTagName("dt");
+
+    var list_dl = document.getElementsByTagName("dl");
+    var list_dt = document.getElementsByTagName("dt");
 //    获得list_introduce文字标签
-    var list_introduce=document.getElementsByClassName("list_introduce");
+    var list_introduce = document.getElementsByClassName("list_introduce");
     console.log(getComputedStyle(list_dl[0]).border);
-    timer=setInterval(function () {
-
-    },1000);
-    for (var i = 0; i < list_dl.length; i++) {
-        (function (n) {
+    list_dl[1].addEventListener("mouseover",function () {
+        check()
+    });
+    // check();
+    function check() {
+        for (var i = 0; i < list_dl.length; i++) {
+            (function (n) {
 //            var list_dl_val=getComputedStyle(list_dl[n]).border;
-            list_dt[n].onmousemove = function () {
-                for (var i = 0; i < list_dt.length; i++) {
-                    list_dt[i].style.border = "2px solid slategrey"
-                }
-                list_dt[n].style.border = "2px solid #E58E43";
-            };
-            list_dl[n].onmousemove = function () {
-                for (var i = 0; i < list_dt.length; i++) {
-                    list_introduce[i].style.display = "none";
-                }
-                list_introduce[n].style.display = "block";
-            }
-        })(i);
+                list_dt[n].onmousemove = function () {
+                    for (var i = 0; i < list_dt.length; i++) {
+                        list_dt[i].style.border = "2px solid slategrey";
+                        list_introduce[i].style.display = "none";
+                    }
+                    list_dt[n].style.border = "2px solid #E58E43";
+                    list_introduce[n].style.display = "block";
+                };
+                // list_dl[n].onmousemove = function () {
+                //     for (var i = 0; i < list_dt.length; i++) {
+                //         list_introduce[i].style.display = "none";
+                //     }
+                //     list_introduce[n].style.display = "block";
+                // }
+            })(i);
+        }
+
     }
-
 };
-
 
 
