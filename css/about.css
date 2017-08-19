@@ -4,10 +4,10 @@
 }
 
 #about_content{
+    margin: auto;
     width: 1900px;
     height: 1510px;
     background-color: #EEEEEE;
-    margin-top: 420px;
 }
 /*.all{*/
     /*float: left;*/

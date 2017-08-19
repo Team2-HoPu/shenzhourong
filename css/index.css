@@ -47,28 +47,31 @@ a{
 }
 #left{
     font: 50px bold;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    line-height: 100px;
-    border: 1px solid sienna;
+    line-height: 70px;
     position: absolute;
     z-index: 2;
     left: 10px;
-    top: 135px;
+    top: 150px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
 }
 #right{
     font: 50px bold;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    line-height: 100px;
-    border: 1px solid sienna;
+    line-height: 70px;
     position: absolute;
     z-index: 2;
     right: 10px;
-    top: 135px;
-
+    top: 150px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
 }
 #change{
     width: 150px;
@@ -111,22 +114,22 @@ span{
     width: 1000px;
     height: 200px;
     padding-right: 50px;
-    margin:auto;
+    position: relative;
+    left: 390px;
 }
 dl{
     width: 100px;
     height: 300px;
     float: left;
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top:80px;
 
 }
 dt{
     width: 111px;
     height: 111px;
-    border: 2px solid ;
+    border: 2px solid slategrey ;
     border-radius: 50%;
-
 }
 dd{
     margin-left: 7px;
@@ -141,51 +144,56 @@ dd{
     width: 1200px;
     height: 40px;
     text-align: center;
-    top: 30px;
-    left: -170px;
     color: #E58E43;
     line-height: 25px;
-    position: relative;
-}
-
-#introduce2{
-    left: -350px;
-}
-#introduce3{
-    left: -530px;
-}
-#introduce4{
-    left: -700px;
-}
-#introduce5{
-    left: -900px;
-}
-.list_introduce{
     display: none;
-    width: 1200px;
-    height: 40px;
-}
-dl:hover dt
-{
-    border-color:red ;
-}
-dl:hover #introduce1{
-    display: block;
-}
-dl:hover #introduce2{
-    display: block;
-}
-dl:hover #introduce3{
-    display: block;
-}
-dl:hover #introduce4{
-    display: block;
-}
-dl:hover #introduce5{
-    display: block;
-}
+    position: absolute;
+    left:-50px;
+    top: 300px;
 
+}
+/*#introduce2{*/
+    /*left: -350px;*/
+/*}*/
+/*#introduce3{*/
+    /*left: -530px;*/
+/*}*/
+/*#introduce4{*/
+    /*left: -700px;*/
+/*}*/
+/*#introduce5{*/
+    /*left: -900px;*/
+/*}*/
 
+/*dl:hover dt*/
+/*{*/
+    /*border-color:red ;*/
+/*}*/
+/*dl:hover #introduce1{*/
+    /*display: block;*/
+/*}*/
+/*dl:hover #introduce2{*/
+    /*display: block;*/
+/*}*/
+/*dl:hover #introduce3{*/
+    /*display: block;*/
+/*}*/
+/*dl:hover #introduce4{*/
+    /*display: block;*/
+/*}*/
+/*dl:hover #introduce5{*/
+    /*display: block;*/
+/*}*/
+
+dl:hover .list_introduce{
+display: block;
+}
+dl:hover dt {
+    border:2px solid #E58E43;
+}
+dl:hover dd {
+    color: #E58E43;
+}
 
 
 
