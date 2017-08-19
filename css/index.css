@@ -7,8 +7,9 @@ ul{
 }
 a{
     text-decoration: none;
-    color: black;
+
 }
+
 /*中部整体*/
 #index_center_down{
     margin: auto;
@@ -116,6 +117,7 @@ span{
     padding-right: 50px;
     position: relative;
     left: 390px;
+    z-index: 0;
 }
 dl{
     width: 100px;
@@ -150,20 +152,11 @@ dd{
     position: absolute;
     left:-50px;
     top: 300px;
-
 }
-/*#introduce2{*/
-    /*left: -350px;*/
+/*#introduce1{*/
+    /*display: block;*/
 /*}*/
-/*#introduce3{*/
-    /*left: -530px;*/
-/*}*/
-/*#introduce4{*/
-    /*left: -700px;*/
-/*}*/
-/*#introduce5{*/
-    /*left: -900px;*/
-/*}*/
+
 
 /*dl:hover dt*/
 /*{*/
@@ -173,7 +166,7 @@ dd{
     /*display: block;*/
 /*}*/
 /*dl:hover #introduce2{*/
-    /*display: block;*/
+    /*z-index: 3;*/
 /*}*/
 /*dl:hover #introduce3{*/
     /*display: block;*/
@@ -185,15 +178,15 @@ dd{
     /*display: block;*/
 /*}*/
 
-dl:hover .list_introduce{
-display: block;
-}
-dl:hover dt {
-    border:2px solid #E58E43;
-}
-dl:hover dd {
-    color: #E58E43;
-}
+/*dl:hover .list_introduce{*/
+/*display: block;*/
+/*}*/
+/*dl:hover dt {*/
+    /*border:2px solid #E58E43;*/
+/*}*/
+/*dl:hover dd {*/
+    /*color: #E58E43;*/
+/*}*/
 
 
 
@@ -220,11 +213,17 @@ dl:hover dd {
     margin-bottom: 40px;
 }
 .index_left_title{
-    margin-top: 25px;
-
+    padding-top: 25px;
     display: none;
+    background-color: #FFFFFF;
     width:1000px;
     height: 150px;
+}
+.index_left_title a{
+    color: black;
+}
+.index_left_title a:hover{
+    color: blue;
 }
 .block{
     display: block;
