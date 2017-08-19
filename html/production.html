@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>production</title>
     <link rel="stylesheet" type="text/css" href="../css/production.css"/>
+    <script src="../js/tool.js"></script>
+    <script src="../js/production.js"></script>
+
 </head>
 <body>
 <div id="production_container">
@@ -74,7 +77,7 @@
     <!--轮播-->
 <div id="production_third">
    <div id="production_third_content">
-    <div id="production_third_carousel">
+    <div id="production_third_carousel" style="left:0">
         <div class="production_third_carousel_one">
             <div class="production_third_carousel_one_left">
                 <h2 class="production_third_carousel_one_left_title">
@@ -151,15 +154,11 @@
             </div>
         </div>
             </div>
-
-
         <!--next代表下一张-->
         <!--perv代表上一张-->
-        <span>
-            <a class="next"><img src="../img/protect_images/next6.png"/></a>
-            <a class="perv"><img src="../img/protect_images/prev6.png"/></a>
-        </span>
-    </div>
+           <div id="next"><a>&gt;</a></div>
+           <div id="prev"><a>&lt;</a></div>
+</div>
 </div>
 
 
@@ -247,5 +246,6 @@
         </div>
     </div>
 </div>
+<script src="../js/production.js"></script>
 </body>
 </html>

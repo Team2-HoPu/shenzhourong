@@ -187,30 +187,30 @@
     background-color: #2597ba;
 }
 #production_third_content {
-    /*overflow: hidden;*/
-    /*position: relative;*/
+    overflow: hidden;
+    position: relative;
     width: 1200px;
     height: 498px;
-    background-color: #2597ba;
+    margin-left: 400px;
+    /*border: 1px solid red;*/
 }
 #production_third_carousel {
-    width: 6000px;
+    width: 3600px;
     height: 498px;
-    margin: auto;
-    /*position: absolute;*/
-    /*z-index: 1;*/
+    position: absolute;
+    z-index: 2;
 }
 .production_third_carousel_one {
-    width: 6000px;
+    width: 1200px;
     height: 498px;
     float: left;
-    margin-left: 350px;
-
+    background-color: red;
 }
 .production_third_carousel_one_left {
     width: 553px;
     height: 498px;
     float: left;
+    margin-left: 40px;
 }
 .production_third_carousel_one_left_title {
     margin-top: 70px;
@@ -230,19 +230,32 @@
     margin-top: 35px;
 }
 #production_third_carousel_two_left_word_three {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .production_third_carousel_one_right {
     width: 550px;
     height: 498px;
     float: left;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 .production_third_carousel_one_right img {
     width: 515px;
     height: 287px;
     margin-top: 115px;
+}
+#next {
+    font-size: 50px;
+    position: absolute;
+    top: 230px;
+    left:1060px;
+    z-index: 99;
+}
+#prev {
+    font-size: 50px;
+    position: absolute;
+    top: 230px;
+    z-index: 99;
 }
 /*轮播结束*/
 
