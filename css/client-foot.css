@@ -1,7 +1,7 @@
 /*-******----------***********-----------*/
 /*底部开始*/
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-decoration: none;
 }
@@ -16,11 +16,11 @@
     height: 492px;
     background-image: url("../img/first_images/bg33.jpg");
     background-size: 100%;
-    border: 1px solid black;
     color: white;
 }
 #foot-img-p{
-    margin: 136px 0 26px 0;
+    padding-top: 136px;
+    margin: 0 0 26px 0;
     font-size: 35px;
 }
 #foot-img-id{

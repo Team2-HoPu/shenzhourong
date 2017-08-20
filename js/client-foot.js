@@ -3,21 +3,15 @@
  */
 
 window.onload=function(){
-    var foot_img=document.getElementById("foot-img");
-    foot_img.addEventListener("DOMMouseScroll",function(){
+    document.getElementById("foot-img").addEventListener("scroll",function(){
         scrollFunc();
-    },false);
-
+    })
    function scrollFunc(){
-       var bg_img=parseInt(foot_img.style.backgroundSize);
-       console.log(bg_img);
        var e=event||window.event;
        if(e.wheelDelta){//IE/Opera/Chrome
-           bg_img=parseInt(foot_img.style.width)+20;
+           foot_img.style.backgroundSize="120%"
        }else if(e.detail){//Firefox
-           bg_img=parseInt(foot_img.style.width)+20;
+           foot_img.style.backgroundSize="120%"
        }
-       foot_img.style.backgroundSize=bg_img+"%";
-       console.log(foot_img.style.backgroundSize);
    }
-}
+};
