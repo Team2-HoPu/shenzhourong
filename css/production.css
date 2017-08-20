@@ -3,9 +3,10 @@
     margin: 0;
 }
 body {
-    position: relative;
-    z-index: 99;
+    /*position: relative;*/
+    /*z-index: 99;*/
 }
+
 #production_container {
     width: 1905px;
     margin: auto;
@@ -17,10 +18,16 @@ body {
     background-image: url("../img/protect_images/top.jpg");
     cursor: pointer;
 }
+/*#production_sub_nav {*/
+    /*width: 100%;*/
+    /*background-color: red;*/
+    /*height: 60px;*/
+/*}*/
 #production_aboutAll {
 
     width: 1905px;
     height: 60px;
+    margin: auto;
     background-color: #ffffff;
     position: relative;
     top: -5px;
@@ -63,9 +70,13 @@ body {
     padding: 24px 30px 21px 30px;
 
 }
+/*#production_first_box {*/
+    /*width: 100%;*/
+/*}*/
 .production_first {
     width: 1905px;
     height: 604px;
+    margin: auto;
     background-color: #EEEEEE;
 }
 .production_left {
@@ -190,6 +201,50 @@ body {
 #production_second_check4{
     margin-left: 200px;
 }
+#production_second_left_bottom {
+    width: 650px;
+    height: 185px;
+    margin-top: 55px;
+
+}
+#production_second_left_bottom span {
+    display: block;
+    width: 198px;
+    height: 184px;
+
+    float: left;
+    margin-right: 16px;
+}
+#production_second_left_bottom_img1 {
+    width: 198px;
+    height: 148px;
+    background: #2597ba url("../img/protect_images/icon29.png") no-repeat center center ;
+    border: 1px solid #2597ba;
+
+}
+
+#production_second_left_bottom_img2 {
+    width: 198px;
+    height: 148px;
+    border: 1px solid #2597ba;
+    background: #2597ba url("../img/protect_images/icon30.png") no-repeat center center ;
+}
+#production_second_left_bottom_img3 {
+    width: 198px;
+    height: 148px;
+    background:  url("../img/protect_images/icon31.png") no-repeat center center;
+    border: 1px solid #2597ba;
+}
+.production_second_left_bottom_mark {
+   display: inline-block;
+    margin: 20px 95px 0 95px;
+
+}
+#production_second_left_bottom .on {
+
+
+}
+
 
 /*轮播*/
 #production_third {
@@ -210,6 +265,7 @@ body {
     height: 498px;
     position: absolute;
     z-index: 2;
+    transition:all .8s ease-in-out;
 }
 .production_third_carousel_one {
     width: 1200px;
