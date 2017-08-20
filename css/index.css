@@ -174,7 +174,9 @@ dl:hover dd {
     margin-left: 345px;
     font-size: 14px;
 }
-
+.index_left_ul_title1{
+    color: skyblue;
+}
 .index_left_title li{
     float: left;
     width: 340px;
@@ -185,6 +187,7 @@ dl:hover dd {
     height:30px;
     float: left;
     line-height: 30px;
+    cursor: pointer;
 }
 .index_left_title_li a{
     color:black;
@@ -192,9 +195,7 @@ dl:hover dd {
 .index_left_title_li a:hover{
     color:#2597BA
 }
-.index_left_title_li:hover .index_left_title{
-    display: block;
-}
+
 
 .index_left_ul_title{
     margin-bottom: 40px;
@@ -212,7 +213,7 @@ dl:hover dd {
     color: black;
 }
 .index_left_title a:hover{
-    color:#2597BA;
+    /*color:#2597BA;*/
 }
 .block{
     display: block;
