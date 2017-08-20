@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#new_active_content{
+    margin: auto;
+    width: 1920px;
+    height: 3000px;
+}
+/*左侧边栏*/
+#new_active_content_left{
+    float: left;
+    width: 305px;
+    height: 750px;
+    margin-left: 345px;
+}
+/*左侧边栏ul公司动态*/
+#new_active_content_left_ul {
+    width: 305px;
+    height:140px;
+    background-color: #EEEEEE;
+}
+#new_active_content_left_ul li{
+    width: 285px;
+    height: 45px;
+    background-color: #EEEEEE;
+    padding-left: 20px;
+    line-height: 45px;
+    border: 1px solid gainsboro;
+}
+/*左侧边栏ul第4个li*/
+.ul_li_four{
+    margin-top: 30px;
+}
+
+/*左侧边栏文本*/
+.new_active_content_left_txt{
+    font-size: 14px;
+    margin-top: 100px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+ a:hover{
+    color: #2597BA;
+}
+.new_active_content_left_span{
+    display: block;
+    width: 285px;
+    height: 45px;
+    background-color: #EEEEEE;
+    padding-left: 20px;
+    line-height: 45px;
+    margin-top: 30px;
+}
+/*左侧边栏下方ul*/
+.new_active_content_left_ul_bottom{
+    font-size: 14px;
+    line-height: 30px;
+}
+.new_active_content_left_ul_bottom{
+    cursor: pointer;
+}
+/*中部main*/
+#new_active_content_main{
+    width: 840px;
+    height: 3000px;
+    float: left;
+    margin-left: 5px;
+}
+/*图片1*/
+.img_vessel{
+    width: 850px;
+    height: 290px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.img_vessel img{
+    margin-top: 20px;
+    transition: all 2s;
+}
+.img_vessel img:hover{
+    transform: scale(1.2);
+}
+#img_vessel_1{
+    margin-top: 0;
+}
+.title{
+    margin-top: 10px;
+    line-height: 50px;
+}
+.txt{
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+/*底部页面切换*/
+#pag_change{
+    margin-top: 20px;
+    width: 800px;
+    height: 40px;
+    margin-left: 150px;
+}
+#pag_change li{
+    float: left;
+    margin-left: 20px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+}
+#pag_change li:hover{
+    background-color: deepskyblue;
+}
+.index_end{
+    width: 35px;
+    height: 27px;
+}
+#on{
+    background-color: deepskyblue;
+}
+.number{
+    width: 18px;
+}
+
+
+
