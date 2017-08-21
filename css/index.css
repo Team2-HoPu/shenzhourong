@@ -145,6 +145,7 @@ dd{
     text-align: center;
     line-height: 20px;
 }
+
 .list_introduce{
     width: 1200px;
     height: 40px;
@@ -157,11 +158,6 @@ dd{
     top: 300px;
 }
 
-
-
-dl:hover dd {
-    color: #E58E43;
-}
 .list_introduce:hover dt{
     border:2px solid#E58E43 ;
 }

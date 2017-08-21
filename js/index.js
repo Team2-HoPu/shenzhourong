@@ -84,12 +84,15 @@ window.onload=function() {
 
     var list_dl = document.getElementsByTagName("dl");
     var list_dt = document.getElementsByTagName("dt");
+    var list_dd=document.getElementsByClassName("haha");
 //    获得list_introduce文字标签
     var list_introduce = document.getElementsByClassName("list_introduce");
-    console.log(getComputedStyle(list_dl[0]).border);
-    // list_dl[1].addEventListener("mouseover",function () {
-    //     check()
-    // });
+    var timer2=null;
+
+
+
+
+
     check();
     function check() {
         for (var i = 0; i < list_dl.length; i++) {
@@ -99,16 +102,12 @@ window.onload=function() {
                     for (var i = 0; i < list_dt.length; i++) {
                         list_dt[i].style.border = "2px solid slategrey";
                         list_introduce[i].style.display = "none";
+                        list_dd[i].style.color="#ffffff";
                     }
                     list_dt[n].style.border = "2px solid #E58E43";
                     list_introduce[n].style.display = "block";
+                    list_dd[n].style.color="#E58E43";
                 };
-                // list_dl[n].onmousemove = function () {
-                //     for (var i = 0; i < list_dt.length; i++) {
-                //         list_introduce[i].style.display = "none";
-                //     }
-                //     list_introduce[n].style.display = "block";
-                // }
             })(i);
         }
 
