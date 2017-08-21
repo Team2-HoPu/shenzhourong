@@ -98,8 +98,8 @@ window.onload=function() {
 
 
     //人物切换
-    //var timer = null;
-    //var timer1 = null;
+    var timer2 = null;
+    var timer3 = null;
     //var btn_idx;
     //    人物简介文字
     var txt = document.getElementsByClassName("a");
@@ -119,19 +119,19 @@ window.onload=function() {
     for (var i = 0; i < txt.length; i++) {
         dd[i].index=dt[i].index = txt[i].index = i;
     }
-    timer = setInterval(function () {
+    timer2 = setInterval(function () {
         trice(0);
-    }, 1200);
+    }, 2000);
     document.getElementById("index_characters_intro").onmouseover=function(e){
-        clearInterval(timer);
+        clearInterval(timer2);
         if(e.target.nodeName=="IMG"){
             start= e.target.idx;
         }
     };
     document.getElementById("index_characters_intro").onmouseout=function(e){
-        timer=setInterval(function(){
+        timer2=setInterval(function(){
             trice();
-        },1000);
+        },2000);
     };
     function trice() {
 //            var num=++start_arg;
@@ -151,8 +151,8 @@ window.onload=function() {
     for (var i = 0; i <dl.length; i++) {
         (function (n) {
             dl[n].onmousemove = function (e) {
-                clearInterval(timer);
-                clearInterval(timer1);
+                clearInterval(timer2);
+                clearInterval(timer3);
                 for (var i = 0; i <dt.length; i++) {
                     dt[i].style.border = "2px solid slategrey";
                     txt[i].style.display = "none";

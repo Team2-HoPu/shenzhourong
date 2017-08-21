@@ -59,8 +59,11 @@ a{
     background-color: black;
     opacity: 0.5;
     color: white;
+    display: none;
+    cursor: pointer;
 }
 #right{
+    cursor: pointer;
     font: 50px bold;
     width: 70px;
     height: 70px;
@@ -73,6 +76,20 @@ a{
     background-color: black;
     opacity: 0.5;
     color: white;
+    display: none;
+}
+/*左右按钮hover*/
+#index_customer_carouse:hover #left{
+    display: block;
+}
+#index_customer_carouse:hover #right{
+    display: block;
+}
+#right:hover{
+    opacity: 0.7;
+}
+#left:hover{
+    opacity: 0.7;
 }
 #change{
     width: 150px;
@@ -81,6 +98,48 @@ a{
     z-index: 2;
     left:530px;
     top: 415px;
+}
+.carouse_img{
+    width: 1200px;
+    height: 462px;
+    float: left;
+}
+/*三个轮播div的背景图片*/
+#carouse_img_one{
+    background-image: url("../img/first_images/020.jpg");
+}
+#carouse_img_two{
+    background-image: url("../img/first_images/019.jpg");
+}
+#carouse_img_three{
+    background-image: url("../img/first_images/018.jpg");
+}
+/*轮播图片里面的文字*/
+.case{
+    position: absolute;
+    left:2500px;
+    top:100px;
+    width: 300px;
+    height: 40px;
+    font-size:28px;
+    color: white;
+}
+.case_txt{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left:2500px;
+    top:170px;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+}
+.case_b{
+    left: 1300px;
+    width:390px;
+}
+.case_a{
+    left: 100px;
 }
 .on{
     background-color: darkorange;
@@ -119,8 +178,15 @@ span{
     left: 390px;
     z-index: 0;
 }
-.on{
+.list_img_block{
+    color: orange;
+}
+/*默认显示样式*/
+.list_img_on{
     border:2px solid#E58E43 ;
+}
+.orange_color{
+    color: orange;
 }
 dl{
     width: 100px;
@@ -145,7 +211,25 @@ dd{
     text-align: center;
     line-height: 20px;
 }
-
+.read{
+    width: 150px;
+    height: 40px;
+    border: 1px solid silver;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+}
+.read:hover{
+    background-color: deepskyblue;
+}
+.a{
+    display:none;
+    text-align: center;
+    color: orange;
+}
+dd{
+    color: white;
+}
 .list_introduce{
     width: 1200px;
     height: 40px;
@@ -157,11 +241,9 @@ dd{
     left:-50px;
     top: 300px;
 }
-
 .list_introduce:hover dt{
     border:2px solid#E58E43 ;
 }
-
 .index_left_ul{
     position: relative;
     width:600px;
@@ -211,19 +293,12 @@ dd{
 .index_left_title a:hover{
     /*color:#2597BA;*/
 }
-.block{
+.index_left_title_block{
     display: block;
 }
 .ma_left{
     margin-left: 40px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -295,8 +370,6 @@ dd{
     float: left;
     margin-left: 20px;
 }
-
-
 .img img{
     width: 310px;
     height: 150px;
@@ -306,42 +379,3 @@ dd{
     transform: scale(1.2);
 }
 
-.carouse_img{
-    width: 1200px;
-    height: 462px;
-    float: left;
-}
-#carouse_img_one{
-    background-image: url("../img/first_images/020.jpg");
-}
-#carouse_img_two{
-    background-image: url("../img/first_images/019.jpg");
-}
-#carouse_img_three{
-    background-image: url("../img/first_images/018.jpg");
-}
-.case{
-    position: absolute;
-    left:2500px;
-    top:100px;
-    width: 300px;
-    height: 40px;
-    font-size:28px;
-    color: white;
-}
-.case_txt{
-    width: 500px;
-    height: 200px;
-    position: absolute;
-    left:2500px;
-    top:170px;
-    color: white;
-    font-size: 20px;
-    line-height: 40px;
-}
-.case_b{
-    left: 1300px;
-}
-.case_a{
-    left: 100px;
-}
