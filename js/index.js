@@ -10,8 +10,6 @@ function getStyle(obj, attr) {
     }
 }
 window.onload=function() {
-
-
     var btn_idx;
     var content = getId("index_center_down");
     var prev = getId("left");
@@ -19,8 +17,6 @@ window.onload=function() {
     var list = getId("index_carouse_img");
     //console.log(prev, next, list);
     var buttons = document.getElementsByTagName("span");
-
-
     function moving(speed, terminal, isLeft) {
         isLeft = isLeft ? 0 : -2400;
         var left_val = parseInt(list.style.left);
@@ -42,16 +38,12 @@ window.onload=function() {
         }
         buttons[btn_idx].setAttribute("class", "on");
     }
-
-
     next.addEventListener("click", function () {
         moving(-1200, -2400, true);
     }, true);
     prev.addEventListener("click", function () {
         moving(1200, 0, false);
     }, true);
-
-
     for (var i = 0; i < buttons.length; i++) {
         (function (n) {
             buttons[i].onclick = function () {
@@ -80,38 +72,99 @@ window.onload=function() {
         }, 2000);
     };
 
-    //    获得dl标签
+    //最新活动
+//获取class为index_left_title_li的li
+    var list_index_left_ul_title=document.getElementsByClassName("index_left_title_li");
+//获取class为index_left_title的ul
+    var list_index_left_title=document.getElementsByClassName("index_left_title");
+    console.log(list_index_left_title,list_index_left_ul_title);
 
-    var list_dl = document.getElementsByTagName("dl");
-    var list_dt = document.getElementsByTagName("dt");
-    var list_dd=document.getElementsByClassName("haha");
-//    获得list_introduce文字标签
-    var list_introduce = document.getElementsByClassName("list_introduce");
-    var timer2=null;
-
-
-
-
-
-    check();
-    function check() {
-        for (var i = 0; i < list_dl.length; i++) {
-            (function (n) {
+    for (var i = 0; i < list_index_left_ul_title.length; i++) {
+        (function (n) {
 //            var list_dl_val=getComputedStyle(list_dl[n]).border;
-                list_dl[n].onmousemove = function () {
-                    for (var i = 0; i < list_dt.length; i++) {
-                        list_dt[i].style.border = "2px solid slategrey";
-                        list_introduce[i].style.display = "none";
-                        list_dd[i].style.color="#ffffff";
-                    }
-                    list_dt[n].style.border = "2px solid #E58E43";
-                    list_introduce[n].style.display = "block";
-                    list_dd[n].style.color="#E58E43";
-                };
-            })(i);
-        }
+            list_index_left_ul_title[n].onmousemove = function () {
+                for (var i = 0; i < list_index_left_title.length; i++) {
+                    list_index_left_title[i].style.display = "none";
+                    list_index_left_ul_title[i].style.color="black";
+                }
+                list_index_left_title[n].style.display= "block";
+                list_index_left_ul_title[n].style.color="skyblue";
+            };
+        })(i);
 
     }
+
+
+
+
+    //人物切换
+    //var timer = null;
+    //var timer1 = null;
+    //var btn_idx;
+    //    人物简介文字
+    var txt = document.getElementsByClassName("a");
+    //    获取dl
+    var dl = document.getElementsByTagName("dl");
+    //    获取任务头像dt
+    var dt = document.getElementsByTagName("dt");
+    var click_obj=document.getElementsByClassName("test");
+    //获取任务姓名dd
+    var dd = document.getElementsByTagName("dd");
+    //定义运动起点
+    var start=0;
+    //图片编号
+    for(var k=0;k<5;k++){
+        click_obj[k].idx=k;
+    }
+    for (var i = 0; i < txt.length; i++) {
+        dd[i].index=dt[i].index = txt[i].index = i;
+    }
+    timer = setInterval(function () {
+        trice(0);
+    }, 1200);
+    document.getElementById("index_characters_intro").onmouseover=function(e){
+        clearInterval(timer);
+        if(e.target.nodeName=="IMG"){
+            start= e.target.idx;
+        }
+    };
+    document.getElementById("index_characters_intro").onmouseout=function(e){
+        timer=setInterval(function(){
+            trice();
+        },1000);
+    };
+    function trice() {
+//            var num=++start_arg;
+        var idx = start++% (txt.length);
+        for (var i = 0; i < txt.length; i++) {
+            txt[i].style.display = "none";
+            dt[i].style.border="2px solid slategrey";
+            dd[i].style.color="";
+            for (var j = 0; j < dd.length; j++) {
+                dd[j].style.color = "#ffffff";
+            }
+        }
+        txt[idx].style.cssText = "color:orange;display:block;";
+        dt[idx].style.border = "2px solid orange";
+        dd[idx].style.color="orange";
+    }
+    for (var i = 0; i <dl.length; i++) {
+        (function (n) {
+            dl[n].onmousemove = function (e) {
+                clearInterval(timer);
+                clearInterval(timer1);
+                for (var i = 0; i <dt.length; i++) {
+                    dt[i].style.border = "2px solid slategrey";
+                    txt[i].style.display = "none";
+                    dd[i].style.color="#ffffff";
+                }
+                dt[n].style.border = "2px solid #E58E43";
+                txt[n].style.display = "block";
+                dd[n].style.color="orange";
+            };
+        })(i);
+    }
 };
+
 
 
