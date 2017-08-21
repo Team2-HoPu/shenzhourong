@@ -1,23 +1,53 @@
 /**
  * Created by Administrator on 2017/8/18.
  */
-window.onload=function(){
+//---------------------------------******************************************************------------------------
+//右边栏动画开始
+    function floatIco(){
     var obtn=document.getElementById("sidabar-center-return");
     var clientHeight=document.documentElement.clientHeight;//可视区域的高度
-
-    window.onscroll=function(){//onscroll为滚动滚动条事件，即这个函数在滚动条滚动时触发
-
-        var osTop=document.documentElement.scrollTop||document.body.scrollTop;//scrollTop为滚动条滑动的距离
-        if (osTop>=clientHeight) {
+    var osTop=document.documentElement.scrollTop||document.body.scrollTop;//scrollTop为滚动条滑动的距离
+    if (osTop>=clientHeight) {
+        obtn.style.display='block';
+        obtn.addEventListener("click",function(){
             obtn.style.display='block';
-            obtn.addEventListener("click",function(){
-                obtn.style.display='block';
-                document.body.scrollTop-=100;
-            });
-        }
-        else{
-            obtn.style.display='none';
-        }
-    };
+            document.body.scrollTop-=100;
+        });
+    }
+    else if(osTop<=100){
+        obtn.style.display='none';
+    }
+    else
+    {
+        obtn.style.display='none';
+    }
+}
+//右边栏动画结束
+//-----------------**********************************************----------------------------
+//-----------************************-----------------------
+//底部动画
+function foot_anima () {
+    var scrollTop=document.body.scrollTop;
+    var foot_imgpic=window.frames["foot_animation"].document.getElementsByClassName("foot_imgPic")[0];
+    console.log("foot_imgpic:"+foot_imgpic);
+    console.log(scrollTop);
 
-};
+    if(scrollTop>=1500){
+        foot_imgpic.style.transition="all 1.5s";
+        foot_imgpic.style.transform="translate(0,20px)";
+    }
+    else if(scrollTop<1500){
+        foot_imgpic.style.transition="all 1.5s";
+        foot_imgpic.style.transform="translate(0,-20px)";
+    }
+    else
+    {   foot_imgpic.style.transition="";
+        foot_imgpic.style.transform="";
+    }
+}
+//底部动画结束
+//----------------*****************************---------------------------
+
+
+
+

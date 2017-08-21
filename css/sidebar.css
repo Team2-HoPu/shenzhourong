@@ -118,6 +118,7 @@
 #sidabar-center-return{
     background:url("../img/first_images/icon19.png") no-repeat;
     position: relative;
+    display: none;
 }
 #sidebar-return-cover{
     width: 60px;

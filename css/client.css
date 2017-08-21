@@ -46,27 +46,17 @@
     margin-top: 73px;
     overflow: hidden;
 }
+
 #client-img{
      margin-left: 351px ;
      margin-right: 111px;
+
  }
-#client-img-magnify{
-    background-size: 100%;
-    background: url("../img/client_images/01%20_2.jpg");
-    background-position: center;
-    transition:all 0.5s ease-in-out;
+.client-img-magnify{
+    transition: all 1.5s;
 }
-#client-img-hover{
-    background-size: 100%;
-    background: url("../img/client_images/01%20_3.jpg");
-    background-position: center;
-    transition:all 0.5s ease-in-out;
-}
-#client-img-hover:hover{
-    background-size: 110%;
-}
-#client-img-magnify:hover {
-    background-size: 110%;
+.client-img-magnify:hover {
+    transform: scale(1.1);
 }
 /*文字样式*/
 .client-word{
@@ -100,28 +90,51 @@ h5{
 }
 /*换页*/
 #client-page{
+    width: 1900px;
     height: 115px;
-    text-align: center;
     line-height: 115px;
+    text-align: center;
 }
 #client-page ul{
     list-style-type: none;
+    width: 350px;
+    margin-left: 775px;
+    text-align: center;
+    height: 35px;
+    position: relative;
+    top:35px;
 }
 #client-page ul li{
-    display:inline;
+    float: left;
+    margin-right: 5px;
+    line-height: 35px;
 }
-#client-page ul li a{
-    text-decoration: none;
+.btn_client{
+    margin: 0 10px 0 0;
+    width: 60px;
+}
+.btn_on{
+    margin:2px  2px;
+    height: 25px;
+    background: #2597BA;
+    width: 25px;
+    padding-bottom: 5px;
+}
+#client-page .btn_client a{
     color: #535353;
-
+    text-decoration: none;
 }
-#client-page ul li a:hover{
-    background-color: #2598Bc;
+#client-page .btn_on a{
+    color: white;
+    text-decoration: none;
+}
+#client-page li:hover{
+    background-color: #2597BA;
 }
 #client-foot{
     width: 1900px;
     height: 1010px;
 }
 /*客户案例结束*/
-/*---------**************/
+/*---------**************-----------------------------------------/
 
