@@ -141,10 +141,10 @@ a{
 .case_a{
     left: 100px;
 }
-.on{
+#change_span_on{
     background-color: darkorange;
 }
-span{
+.change_span{
     width: 21px;
     height: 21px;
     border-radius: 50%;

@@ -16,7 +16,7 @@ window.onload=function() {
     var next = getId("right");
     var list = getId("index_carouse_img");
     //console.log(prev, next, list);
-    var buttons = document.getElementsByTagName("span");
+    var buttons = document.getElementsByClassName("change_span");
     function moving(speed, terminal, isLeft) {
         isLeft = isLeft ? 0 : -2400;
         var left_val = parseInt(list.style.left);
@@ -34,9 +34,9 @@ window.onload=function() {
         btn_idx = Math.ceil(Math.abs(left_val / (1201)));
         console.log(btn_idx);
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].setAttribute("class", "");
+            buttons[i].style.backgroundColor="white";
         }
-        buttons[btn_idx].setAttribute("class", "on");
+        buttons[btn_idx].style.backgroundColor="darkorange"
     }
     next.addEventListener("click", function () {
         moving(-1200, -2400, true);
@@ -49,9 +49,9 @@ window.onload=function() {
             buttons[i].onclick = function () {
                 list.style.left = n * (-1200) + "px";
                 for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].setAttribute("class", "");
+                    buttons[i].style.backgroundColor="white";
                 }
-                this.setAttribute("class", "on");
+                buttons[btn_idx].style.backgroundColor="darkorange"
             }
         })(i);
     }
