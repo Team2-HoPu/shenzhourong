@@ -165,52 +165,53 @@ body {
     margin-top: 55px;
 
 }
-#production_second_left_bottom span {
-    display: block;
+.production-second_left_img1 {
     width: 198px;
     height: 148px;
     float: left;
     border: 1px solid #2597ba;
     margin-right: 16px;
 }
-#production_second_left_bottom_img1 {
-    /*width: 198px;*/
-    /*height: 148px;*/
-    background:  url("../img/protect_images/icon29.png") no-repeat center center ;
-    /*border: 1px solid #2597ba;*/
 
+
+.production-second_left_img1 dt {
+    width: 198px;
+    height: 148px;
+    position: relative;
+}
+.on_img_title {
+    position: absolute;
+    top: 111px;
+    left:68px;
+    color: #56A3D0;
+}
+#on .on_img_title {
+    color: #ffffff;
 }
 
-
-#production_second_left_bottom_img2 {
-    /*width: 198px;*/
-    /*height: 148px;*/
-    /*border: 1px solid #2597ba;*/
-    background:  url("../img/protect_images/icon30.png") no-repeat center center ;
+.on_img1{
+    background:url("../img/protect_images/icon29.png")no-repeat center center;
 }
-#production_second_left_bottom_img3 {
-    /*width: 198px;*/
-    /*height: 148px;*/
-    background:  url("../img/protect_images/icon31.png") no-repeat center center;
-    /*border: 1px solid #2597ba;*/
+.on_img2{
+    background:url("../img/protect_images/icon30.png")no-repeat center center;
 }
-#production_second_left_bottom span img {
-    margin: 40px 0px 0px 60px;
-
+.on_img3{
+    background:url("../img/protect_images/icon31.png")no-repeat center center;
 }
-#production_second_left_bottom span .on_img {
-    opacity: 0.0;
+#on .on_img1{
+    background:#56A3D0 url("../img/protect_images/icon32.png")no-repeat center center;
 }
-/*.production_second_left_bottom_mark {*/
-   /*display: inline-block;*/
-    /*margin: 20px 95px 0 95px;*/
-
-/*}*/
-#production_second_left_bottom .on {
-background: #2597ba;
-
+#on .on_img2{
+    background:#56A3D0 url("../img/protect_images/icon33.png")no-repeat center center;
 }
-
+#on .on_img3{
+    background:#56A3D0 url("../img/protect_images/icon34.png")no-repeat center center;
+}
+#on .arrow{
+    width: 200px;
+    height: 50px;
+    background: url("../img/protect_images/icon35.png")no-repeat center center;
+}
 
 /*联动主轮播*/
 #production_third {
@@ -224,7 +225,6 @@ background: #2597ba;
     width: 1200px;
     height: 498px;
     margin-left: 400px;
-    /*border: 1px solid red;*/
 }
 #production_third_carousel {
     width: 3600px;

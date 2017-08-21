@@ -1,70 +1,67 @@
-window.onload=function() {
-    var timer = null;
-    var timer1 = null;
-    var next = getObj("next");
-    var prev = getObj("prev");
-    console.log(next, prev);
-    var production_third_carousel = getObj("production_third_carousel");
-    var buttons = document.getElementsByTagName("span");
+    window.onload=function() {
+        var timer = null;
+        var timer1 = null;
+        var next = getObj("next");
+        var prev = getObj("prev");
+        var production_third_carousel = getObj("production_third_carousel");
+        var dl_img = document.getElementsByClassName("production-second_left_img1");
+//        var word = dl_img.getElementsByClassName("on_img_title");
 
-    prev.addEventListener('click', function () {
-        moving(1200, 0, "-2400px");
+        prev.addEventListener('click', function () {
+            moving(1200, 0, -2400);
 
-    });
-    next.addEventListener('click', function () {
-        moving(-1200, -2400, "0");
-    });
+        });
+        next.addEventListener('click', function () {
+            moving(-1200, -2400, 0);
+        });
 
-    for (var i = 0; i < buttons.length; i++) {
-        (function (n) {
-            buttons[n].onclick = function () {
-                button_control(this, n);
+        function moving(speed, terminal, flag) {
+            var left_value = parseInt(production_third_carousel.style.left);
+//            console.log(left_value);
+            if (left_value === terminal) {
+                left_value = flag;
+
+            } else {
+                left_value += speed;
             }
-        })(i)
-    }
-
-    function moving(speed, terminal, flag) {
-        var left_value = parseInt(production_third_carousel.style.left);
-        //console.log("left_value:"+left_value);
-        if (left_value === terminal) {
-            production_third_carousel.style.left = flag;
-        } else {
-            left_value += speed;
             production_third_carousel.style.left = left_value + "px";
-        }
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].setAttribute("class", "");
-
-        }
-        buttons[left_value / -1200].setAttribute("class", "on");
-
-
-        function button_control(that, num) {
-            //在修改class前，清空所有class；
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].setAttribute("class", "");
-
+            for (var i = 0; i < dl_img.length; i++) {
+                dl_img[i].setAttribute("id", "")
             }
-            //点击span修改class为“on”；
-            that.setAttribute("class", "on");
 
-            //控制图片移动到当前位置
-            console.log(num);
+            dl_img[left_value / -1200].setAttribute("id", "on");
+        }
+
+        function span_control(that, num) {
+            for (var i = 0; i < dl_img.length; i++) {
+                dl_img[i].setAttribute("id", "");
+            }
+//            console.log(dl_img[i]);
+            that.setAttribute("id", "on");
             production_third_carousel.style.left = num * (-1200) + "px";
+        }
+        for (var i = 0; i < dl_img.length; i++) {
+            (function (n) {
+                dl_img[n].onmouseover = function () {
+                    span_control(this, n)
+                }
+            })(i)
         }
 
 
         timer = setInterval(function () {
-            moving(-1200, -2400, "0");
+            moving(-1200, -2400, 0);
         }, 2000);
-        getObj("production_third_content").onmouseover = function () {
-            clearInterval(timer);
-            clearInterval(timer1);
+            getObj("production_third_content").onmouseover = function () {
+                clearInterval(timer);
+                clearInterval(timer1);
+            };
+            getObj("production_third_content").onmouseout = function () {
+                timer1 = setInterval(function () {
+                    moving(-1200, -2400,"0");
+                }, 2000);
+            };
         };
-        getObj("production_third_content").onmouseout = function () {
-            timer1 = setInterval(function () {
-                moving(-1200, -2400, "0");
-            }, 2000);
-        }
-    }
-}
+
+
+
