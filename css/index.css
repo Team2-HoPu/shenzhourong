@@ -42,7 +42,6 @@ a{
     position: relative;
     left: 350px;
     top: 50px;
-    border: 1px solid saddlebrown;
     overflow: hidden;
     font-size: 0;
 }
@@ -106,13 +105,13 @@ a{
 }
 /*三个轮播div的背景图片*/
 #carouse_img_one{
-    background-image: url("../img/first_images/020.jpg");
+    background: url("../img/first_images/020.jpg") no-repeat;
 }
 #carouse_img_two{
-    background-image: url("../img/first_images/019.jpg");
+    background: url("../img/first_images/019.jpg") no-repeat;
 }
 #carouse_img_three{
-    background-image: url("../img/first_images/018.jpg");
+    background: url("../img/first_images/018.jpg") no-repeat;
 }
 /*轮播图片里面的文字*/
 .case{
@@ -167,7 +166,8 @@ a{
     width:1900px;
     height: 430px;
     margin-top: 100px;
-    background-image: url("../img/first_images/bg22.jpg");
+    background: url("../img/first_images/bg22.jpg") no-repeat;
+    background-position-y:0;
 }
 /*人物列表*/
 .list{
@@ -222,7 +222,10 @@ dd{
 .read:hover{
     background-color: deepskyblue;
 }
-.a{
+.read a{
+    color: white;
+}
+.index_list_txt{
     display:none;
     text-align: center;
     color: orange;

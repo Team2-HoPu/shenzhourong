@@ -102,7 +102,7 @@ window.onload=function() {
     var timer3 = null;
     //var btn_idx;
     //    人物简介文字
-    var txt = document.getElementsByClassName("a");
+    var txt = document.getElementsByClassName("index_list_txt");
     //    获取dl
     var dl = document.getElementsByTagName("dl");
     //    获取任务头像dt
@@ -122,6 +122,7 @@ window.onload=function() {
     timer2 = setInterval(function () {
         trice(0);
     }, 2000);
+    //事件委托
     document.getElementById("index_characters_intro").onmouseover=function(e){
         clearInterval(timer2);
         if(e.target.nodeName=="IMG"){
@@ -133,6 +134,7 @@ window.onload=function() {
             trice();
         },2000);
     };
+    //定义自动切换的函数
     function trice() {
 //            var num=++start_arg;
         var idx = start++% (txt.length);
@@ -148,6 +150,7 @@ window.onload=function() {
         dt[idx].style.border = "2px solid orange";
         dd[idx].style.color="orange";
     }
+
     for (var i = 0; i <dl.length; i++) {
         (function (n) {
             dl[n].onmousemove = function (e) {
