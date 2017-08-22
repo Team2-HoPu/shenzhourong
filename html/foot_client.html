@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../css/client-foot.css">
-    <script src="../js/client-foot.js"></script>
+    <script src="../js/fn-tools.js"></script>
 </head>
 <body>
 <div id="foot">
@@ -41,33 +41,33 @@
         <div id="foot-company-list">
             <ul class="foot-list-left">
                 <li class="foot-list-word"><a href="#">快速入口</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">首页</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">服务</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">关于</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">新闻</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">试用</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href=#>关于</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">试用</a></li>
             </ul>
             <ul class="foot-list-left">
                 <li class="foot-list-word"><a href="#">产品服务</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">风控无人机</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">信贷管理系统</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">大数据征信</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">银行资信合规对接</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">风控质询和评分建模</a></li>
+                <li><a href="#">风控无人机</a></li>
+                <li><a href="#">信贷管理系统</a></li>
+                <li><a href="#">大数据征信</a></li>
+                <li><a href="#">银行资信合规对接</a></li>
+                <li><a href="#">风控质询和评分建模</a></li>
             </ul>
             <ul class="foot-list-left">
                 <li class="foot-list-word"><a  href="#" >关于我们</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">公司介绍</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">合作伙伴</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">人才招聘</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">联系我们</a></li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">合作伙伴</a></li>
+                <li><a href="#">人才招聘</a></li>
+                <li><a href="#">联系我们</a></li>
             </ul>
             <ul class="foot-list-left">
                 <li class="foot-list-word"><a href="#">联系我们</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">电话：400-8190-416 （9:30-18:30 工作日）</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">商务：bd@shenzhourong.com</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">招聘：zhaopin@shenzhourong.com</a></li>
-                <li><a href="javascript:window.parent.location.href='#'">地址：北京市海淀区丹棱街1号互联网金融中心1602</a></li>
+                <li><a href="#">电话：400-8190-416 （9:30-18:30 工作日）</a></li>
+                <li><a href="#">商务：bd@shenzhourong.com</a></li>
+                <li><a href="#">招聘：zhaopin@shenzhourong.com</a></li>
+                <li><a href="#">地址：北京市海淀区丹棱街1号互联网金融中心1602</a></li>
             </ul>
             <dl class="foot-list-left" id="foot-list-code">
                 <dt><img src="../img/about_images/erweima.png"> </dt>
@@ -86,7 +86,9 @@
 </div>
 </body>
 <script>
-
+   window.onscroll=function(){
+       foot_anima ()
+   }
 </script>
 
 </html>
