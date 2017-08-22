@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EEEEEE;
+}
+
+/*头部导航栏*/
+#about_head{
+    height: 350px;
+    width: 1900px;
+    margin: 0 auto;
+    background: url("../img/about_images/top.jpg");
+}
+
+
+/*免费试用*/
+#about_nav{
+    position: relative;
+    margin: 0 auto;
+    width: 1910px;
+    height: 50px;
+    background: white;
+    /*border: 1px solid red;*/
+}
+#about_nav ul{
+    margin: 0 auto;
+    text-align: center;
+    line-height:50px;
+    padding-left:320px;
+    list-style-type: none;
+}
+#about_nav ul li{
+    text-align: center;
+    float: left;
+    width: 120px;
+}
+#about_nav ul li a:hover{
+    color: #2597BA;
+}
+
+#about_nav_btnfree{
+    width: 100px;
+    background: #2597BA;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 635px;
+
+}
+#about_nav_btnfree a{
+    color: black;
+    display: block;
+}
+
+
+
+#about_content{
+    margin: auto;
+    width: 1910px;
+    height: 1510px;
+    background-color: #EEEEEE;
+}
+/*.all{*/
+    /*float: left;*/
+    /*width: 1205px;*/
+    /*border: 1px solid sandybrown;*/
+/*}*/
+/*关于我们*/
+#about_introduction{
+     float: left;
+     width: 1205px;
+     height: 345px;
+     margin-top:40px;
+     margin-left: 350px;
+}
+.txt{
+    font-size: 13px;
+    line-height:25px;
+    margin-top: 40px;
+    text-indent: 2em;
+    /*首行缩进两个字符*/
+}
+.txt_2{
+    font-size: 13px;
+    line-height:25px;
+}
+.txt_3{
+    font-size: 13px;
+    line-height:25px;
+}
+/*企业历程*/
+#about_course{
+    float: left;
+    width: 1205px;
+    height: 345px;
+    margin-left: 350px;
+}
+#process{
+    margin-top: 40px;
+    list-style: none;
+}
+#process li{
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+}
+/*企业活动与交流*/
+#about_exchange{
+    width: 1205px;
+    height: 570px;
+    float: left;
+    margin-left: 350px;
+    margin-top: 70px;
+}
+.title{
+    font-size: 15px;
+    font-weight: bold;
+}

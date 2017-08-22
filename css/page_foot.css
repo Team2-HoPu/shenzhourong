@@ -1,0 +1,128 @@
+/*-******----------***********-----------*/
+/*底部开始*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+}
+#foot{
+    height: 1010px;
+    width: 1900px;
+}
+/*图片*/
+#foot-img{
+    width: 1900px;
+    height: 500px;
+    color: white;
+}
+.foot_imgPic{
+    height: 490px;
+    width: 1900px;
+    position: absolute;
+    z-index: 0;
+    /*transition: all .5s;*/
+}
+#foot-img-p{
+    padding-top: 136px;
+    font-size: 35px;
+    z-index: 50;
+    position: relative;
+    left: 780px;
+}
+#foot-img-id{
+    font-size: 20px;
+    margin-bottom: 33px;
+    z-index: 50;
+    position: relative;
+    left: 680px;
+    top: 10px;
+}
+#foot-img-button{
+    width: 202px;
+    height: 57px;
+    background-color: #EDAB00;
+    font-size: 22px;
+    text-align: center;
+    line-height: 57px;
+    z-index: 52;
+    position: relative;
+
+
+}
+#foot-img-button a{
+    color: white;
+}
+#foot-nav a{
+    color: #535353;
+}
+#foot-nav{
+    width: 1900px;
+    height: 109px;
+}
+#foot-nav-dl{
+    margin-left: 393px;
+}
+.foot-nav-dl{
+    float: left;
+    margin:10px 23px 0 0 ;
+
+}
+.foot-nav-dt{
+    float: left;
+}
+.foot-nav-dl dd{
+    float: left;
+    font-size: 26px;
+    margin-right: 23px;
+    line-height: 67px;
+    height: 67px;
+    border-right: 1px solid #EEEEEE;
+    padding-right: 23px;
+}
+/*底部*/
+#foot-company{
+    background-color:#EEEEEE;
+    height: 412px;
+}
+#foot-company a{
+    color: #535353;
+}
+#foot-company-list{
+    width: 1200px;
+    height: 256px;
+    LINE-HEIGHT: 21pt;
+    float: left;
+    margin: 0 354px 37px;
+    border-bottom:1px solid black;
+}
+.foot-list-left{
+    padding-top: 47px;
+    margin-right: 80px;
+    list-style-type: none;
+    float: left;
+}
+.foot-list-word{
+  font-size: 22px;
+   margin-bottom: 32px;
+}
+#foot-list-code{
+    padding: 0 ;
+    float: right;
+    margin: 0 0 52px 0;
+}
+#foot-list-code dt{
+    margin-top: 41px;
+}
+#foot-list-code dd{
+    margin-top: 20px;
+}
+/*公司版权*/
+#foot-copyright{
+    width: 1200px;
+    height: 155px;
+    margin-left: 354px;
+    text-align: center;
+    LINE-HEIGHT: 23pt;
+}
+/*底部结束*/
+/*---------------***************************----*/

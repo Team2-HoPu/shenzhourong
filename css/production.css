@@ -1,0 +1,303 @@
+* {
+    padding:0;
+    margin: 0;
+}
+body {
+
+}
+/*production页面整体*/
+#production_container {
+    /*border: 1px solid red;*/
+    width: 1900px;
+    margin: 0 auto;
+}
+/*导航标题*/
+#production_head{
+    /*margin-top: 40px;*/
+    width: 1910px;
+    height: 350px;
+    background: url("../img/protect_images/top.jpg");
+}
+
+
+/*第一个产品风控无人机*/
+/*和第四个产品大数据征信*/
+.production_first {
+    width: 1900px;
+    height: 604px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+}
+/*第一个产品风控无人机左边部分*/
+.production_left {
+    width: 860px;
+    height: 604px;
+    float: left;
+
+}
+/*第一个产品风控无人机左边部分- 图片*/
+.production_left img {
+    width: 471px;
+    height: 267px;
+    margin-left: 354px;
+    margin-top: 68px;
+
+}
+/*第一个产品风控无人机左边部分- 按钮*/
+.production_check {
+    width: 188px;
+    height: 49px;
+    background-color: #edab00;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 490px;
+    margin-top: 30px;
+}
+.production_check:hover {
+    background-color: #f59701;
+    cursor: pointer;
+}
+/*第一个产品风控无人机右边部分*/
+.production_right {
+    width: 670px;
+    height: 604px;
+    float: left;
+    margin-left: 100px;
+
+}
+/*第一个产品风控无人机右边部分- 文字*/
+.production_right_one {
+    width: 670px;
+    height: 288px;
+}
+.production_title {
+    font-size: 26px;
+    padding-top: 73px;
+}
+.production_title a {
+    color: #2b97ba;
+    text-decoration: none;
+}
+.production_word {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 41px;
+}
+/*第一个产品风控无人机右下部分- 产品优势小列表 */
+.production_right_two {
+    width: 240px;
+    height: 166px;
+
+}
+.production_right_two_ul {
+    list-style-type: none;
+    padding-top: 43px;
+}
+.production_right_two_ul li {
+    float: left;
+    padding-right: 10px;
+    font-size: 15px;
+
+}
+/*第二个产品信贷管理系统*/
+.production_second {
+    width: 1900px;
+    height: 481px;
+}
+/*第二个产品信贷管理系统左边部分*/
+.production_second_left {
+    width: 670px;
+    height: 481px;
+    float: left;
+    margin-left: 354px;
+}
+/*第二个产品信贷管理系统右边部分*/
+.production_second_right {
+    width: 875px;
+    height: 481px;
+    float: left;
+
+}
+/*第二个产品信贷管理系统右边- 图片部分*/
+.production_second_right img {
+    width: 466px;
+    height: 258px;
+    margin: 101px 398px 0 95px;
+
+}
+/*第二个产品信贷管理系统右边- 按钮部分*/
+#production_second_check {
+    margin-left: 245px;
+}
+
+/*第五个产品银行资金合规对接*/
+.production_five {
+    width: 1900px;
+    height: 646px;
+
+}
+/*第五个产品银行资金合规对接左边部分*/
+.production_five_left {
+    width: 670px;
+    height: 646px;
+    float: left;
+    margin-left: 352px;
+}
+/*第五个产品银行资金合规对接左边部分- 图片*/
+#production_five_right_one img {
+    width: 297px;
+    height: 322px;
+}
+/*第五个产品银行资金合规对接左边部分- 按钮*/
+#production_second_check3 {
+    margin-left: 160px;
+}
+/*第六个产品 风控咨询&评分建模*/
+#production_six {
+    background-color: #EEEEEE;
+}
+/*第六个产品 风控咨询&评分建模右边- 图片部分*/
+#production_six_right_one img {
+    width: 380px;
+    height: 366px;
+}
+/*第六个产品 风控咨询&评分建模右边- 按钮部分*/
+#production_second_check4{
+    margin-left: 200px;
+}
+/*联动轮播- 小轮播切换*/
+#production_second_left_bottom {
+    width: 650px;
+    height: 185px;
+    margin-top: 35px;
+
+}
+.production-second_left_img1 {
+    width: 198px;
+    height: 148px;
+    float: left;
+    border: 1px solid #2597ba;
+    margin-right: 16px;
+}
+
+
+.production-second_left_img1 dt {
+    width: 198px;
+    height: 148px;
+    position: relative;
+}
+.on_img_title {
+    position: absolute;
+    top: 111px;
+    left:68px;
+    color: #56A3D0;
+}
+#on .on_img_title {
+    color: #ffffff;
+}
+
+.on_img1{
+    background:url("../img/protect_images/icon29.png")no-repeat center center;
+}
+.on_img2{
+    background:url("../img/protect_images/icon30.png")no-repeat center center;
+}
+.on_img3{
+    background:url("../img/protect_images/icon31.png")no-repeat center center;
+}
+#on .on_img1{
+    background:#56A3D0 url("../img/protect_images/icon32.png")no-repeat center center;
+}
+#on .on_img2{
+    background:#56A3D0 url("../img/protect_images/icon33.png")no-repeat center center;
+}
+#on .on_img3{
+    background:#56A3D0 url("../img/protect_images/icon34.png")no-repeat center center;
+}
+#on .arrow{
+    width: 200px;
+    height: 35px;
+    background: url("../img/protect_images/icon35.png")no-repeat center center;
+}
+
+/*联动主轮播*/
+#production_third {
+    margin: 0 auto;
+    width: 1900px;
+    height: 498px;
+    background-color: #2597ba;
+}
+#production_third_content {
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+    height: 498px;
+    margin-left: 400px;
+}
+#production_third_carousel {
+    width: 3600px;
+    height: 498px;
+    position: absolute;
+    z-index: 2;
+    transition:all .8s ease-in-out;
+}
+.production_third_carousel_one {
+    width: 1200px;
+    height: 498px;
+    float: left;
+
+}
+.production_third_carousel_one_left {
+    width: 553px;
+    height: 498px;
+    float: left;
+    margin-left: 40px;
+}
+.production_third_carousel_one_left_title {
+    margin-top: 70px;
+}
+.production_third_carousel_one_left_title a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.production_third_carousel_one_left_word {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 87px;
+}
+#production_third_carousel_one_left_word_two {
+    margin-top: 35px;
+}
+#production_third_carousel_two_left_word_three {
+    margin-top: 10px;
+}
+
+.production_third_carousel_one_right {
+    width: 550px;
+    height: 498px;
+    float: left;
+    margin-left: 30px;
+}
+.production_third_carousel_one_right img {
+    width: 515px;
+    height: 287px;
+    margin-top: 115px;
+}
+#next {
+
+    position: absolute;
+    top: 230px;
+    left:1060px;
+    z-index: 99;
+}
+#prev {
+
+    position: absolute;
+    top: 230px;
+    z-index: 99;
+}
+/*轮播结束*/
+

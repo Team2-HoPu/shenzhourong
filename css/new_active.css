@@ -1,0 +1,154 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#new_active_main{
+    margin: 0 auto;
+    width: 1900px;
+}
+/*头部导航栏*/
+#new_active_head{
+    height: 350px;
+    background: url("../img/newActive_images/top.jpg");
+}
+
+#new_active_content{
+    margin-top: 40px;
+    width: 1910px;
+    height: 100%;
+
+}
+/*左侧边栏*/
+#new_active_content_left{
+    float: left;
+    width: 305px;
+    height: 750px;
+    margin-top: 20px;
+    margin-left: 345px;
+}
+/*左侧边栏ul公司动态*/
+#new_active_content_left_ul {
+    width: 305px;
+    height:140px;
+    background-color: #EEEEEE;
+}
+#new_active_content_left_ul li{
+    width: 285px;
+    height: 45px;
+    background-color: #EEEEEE;
+    padding-left: 20px;
+    line-height: 45px;
+    border: 1px solid gainsboro;
+}
+/*左侧边栏ul第4个li*/
+.ul_li_four{
+    margin-top: 30px;
+}
+
+/*左侧边栏文本*/
+.new_active_content_left_txt{
+    font-size: 14px;
+    margin-top: 100px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+ a:hover{
+    color: #2597BA;
+}
+.new_active_content_left_span{
+    display: block;
+    width: 285px;
+    height: 45px;
+    background-color: #EEEEEE;
+    padding-left: 20px;
+    line-height: 45px;
+    margin-top: 30px;
+}
+/*左侧边栏下方ul*/
+.new_active_content_left_ul_bottom{
+    font-size: 14px;
+    line-height: 30px;
+}
+.new_active_content_left_ul_bottom{
+    cursor: pointer;
+}
+/*中部main*/
+#new_active_content_main{
+    width: 840px;
+    height: 3000px;
+    float: left;
+    margin-left: 5px;
+}
+/*图片1*/
+.img_vessel{
+    width: 850px;
+    height: 280px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.img_vessel img{
+    width: 850px;
+    margin-top: 10px;
+    transition: all 1.5s;
+}
+.img_vessel img:hover{
+    transform: scale(1.1);
+}
+
+.title{
+    margin-top: 10px;
+    line-height: 50px;
+}
+.txt{
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+/*底部页面切换*/
+#pag_change{
+    margin-top: 20px;
+    width: 800px;
+    height: 40px;
+    margin-left: 150px;
+}
+#pag_change li{
+    float: left;
+    margin-left: 20px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+}
+#pag_change li:hover{
+    background-color: deepskyblue;
+}
+.index_end{
+    width: 35px;
+    height: 27px;
+}
+#on{
+    background-color: deepskyblue;
+    color: coral;
+}
+#pag_change li{
+    display: block;
+    cursor: pointer;
+
+
+}
+.number a{
+    width: 20px;
+    display: block;
+}
+.number a:hover{
+    color: white;
+}
+
+
+

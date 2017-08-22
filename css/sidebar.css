@@ -1,0 +1,138 @@
+
+/*---------------**********************------------*/
+/*右边栏*/
+#sidebar-center{
+    width: 60px;
+    height: 240px;
+    position: fixed;
+    right:0px;
+    top: 360px;
+    z-index: 2;
+}
+#sidebar-center-ul{
+    width: 60px;
+    height: 220px;
+    list-style-type: none;
+    text-align: center;
+}
+#sidebar-center-ul li{
+    width: 60px;
+    height: 50px;
+    border: 1px solid #2598Bc;
+    margin-bottom: 5px;
+    background-position: center;
+    background-size: 50%;
+    background-color: white;
+}
+
+/*电话*/
+#sidebar-center-phone{
+    background:url("../img/about_images/icon16.png") no-repeat;
+}
+#sidebar-phone-num{
+    width: 240px;
+    height: 50px;
+    border: 1px solid  #2598Bc;
+    position: relative;
+    right: 180px;
+    top:-1px;
+    background-color:white;
+    display: none;
+}
+#sideblar-phone-span{
+    display: block;
+    width: 180px;
+    float: left;
+    height: 50px;
+    font-size:16px;
+    line-height: 50px;
+    color: #2598Bc;
+}
+#sidebar-center-cover{
+    width: 60px;
+    height: 50px;
+    float: left;
+    background:url("../img/about_images/icon20dzf.png") no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+/*微信*/
+#sidebar-center-wx{
+    background:url("../img/about_images/icon17.png") no-repeat;
+
+}
+#sidebar-wx-hov{
+    position: absolute;
+    top:-48px;
+    right: 81px;
+    width: 190px;
+    height:110px;
+    display: none;
+
+}
+#sidebar-wx-code{
+    width: 60px;
+    height: 50px;
+    background:url("../img/about_images/icon21dzf.png") no-repeat;
+    position: relative;
+    right: -213px;
+    top: 106px;
+    background-position: center;
+    background-size: 50%;
+}
+#sidebar-wx-cover{
+    width: 120px;
+    height: 112px;
+    background:url("../img/about_images/erweima.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border: 1px solid  #2598Bc;
+    position: absolute;
+    top: 48px;
+    left: 83px;
+}
+/*qq*/
+#sidabar-center-qq{
+    background:url("../img/about_images/icon18.png") no-repeat;
+}
+#sidabar-qq-cover{
+    width: 60px;
+    height: 50px;
+    background:url("../img/about_images/icon18dzf.png") no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: relative;
+    display: none;
+    left: 0;
+}
+#sidebar-center-phone:hover #sidebar-phone-num{
+    display: block;
+}
+#sidebar-center-wx:hover #sidebar-wx-hov{
+    display: block;
+}
+#sidabar-center-qq:hover #sidabar-qq-cover{
+    display: block;
+}
+/*返回*/
+#sidabar-center-return{
+    background:url("../img/first_images/icon19.png") no-repeat;
+    position: relative;
+    display: none;
+}
+#sidebar-return-cover{
+    width: 60px;
+    height: 50px;
+    background:url("../img/about_images/ico23.png") no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position:absolute;
+    top: 1px;
+    right: 1px;
+    display: none;
+}
+#sidabar-center-return:hover #sidebar-return-cover{
+    display: block;
+}
+/*右边栏结束*/
+/*------************************----------------*/

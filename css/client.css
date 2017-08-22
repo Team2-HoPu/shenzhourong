@@ -1,0 +1,141 @@
+/********------------**********/
+/*客户案例：center开始*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*头部*/
+
+#client-head{
+    margin: 0 auto;
+    width: 1900px;
+    height: 359px;
+    background-image: url("../img/client_images/top03.jpg");
+}
+/*右边栏*/
+#client-sidebar{
+    width: 100px;
+    height: 440px;
+    position: fixed;
+    right:0;
+    top: 400px;
+}
+/*中间*/
+#client-center{
+    margin: 0 auto;
+    height:1600px;
+    width: 1900px;
+    position: relative;
+    z-index: 1;
+}
+/*灰色背景图*/
+.client-grey{
+    width: 1900px;
+    height: 495px;
+    background-color: #EEEEEE;
+}
+/*白色背景*/
+#client-midden{
+    height: 495px;
+    background-color: white;
+}
+/*图片样式*/
+.client-img{
+    width: 492px;
+    height: 321px;
+    float: left;
+    margin-top: 73px;
+    overflow: hidden;
+}
+
+#client-img{
+     margin-left: 351px ;
+     margin-right: 111px;
+
+ }
+.client-img-magnify{
+    transition: all 1.5s;
+}
+.client-img-magnify:hover {
+    transform: scale(1.1);
+}
+/*文字样式*/
+.client-word{
+    width: 602px;
+    height: 301px;
+    float: left;
+    margin: 78px 111px 0 351px;
+    color: #535353;
+    LINE-HEIGHT: 20pt;
+}
+#client-word{
+   margin: 78px 0 0 0;
+}
+h2{
+    margin-bottom: 33px;
+}
+p{
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+h5{
+    margin-bottom: 20px;
+}
+#client-center  h2 a{
+    color: #2598Bc;
+    text-decoration: none;
+}
+#client-center  h5 a{
+    color: #535353;
+    text-decoration: none;
+}
+/*换页*/
+#client-page{
+    width: 1900px;
+    height: 115px;
+    line-height: 115px;
+    text-align: center;
+}
+#client-page ul{
+    list-style-type: none;
+    width: 350px;
+    margin-left: 775px;
+    text-align: center;
+    height: 35px;
+    position: relative;
+    top:35px;
+}
+#client-page ul li{
+    float: left;
+    margin-right: 5px;
+    line-height: 35px;
+}
+.btn_client{
+    margin: 0 10px 0 0;
+    width: 60px;
+}
+.btn_on{
+    margin:2px  2px;
+    height: 25px;
+    background: #2597BA;
+    width: 25px;
+    padding-bottom: 5px;
+}
+#client-page .btn_client a{
+    color: #535353;
+    text-decoration: none;
+}
+#client-page .btn_on a{
+    color: white;
+    text-decoration: none;
+}
+#client-page li:hover{
+    background-color: #2597BA;
+}
+#client-foot{
+    width: 1900px;
+    height: 1010px;
+}
+/*客户案例结束*/
+/*---------**************-----------------------------------------/
+
